@@ -1,0 +1,182 @@
+/* Grid container */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+    "multi multi multi stress steps"
+    "multi multi multi status steps"
+    "avgstages laststages index activity activity";
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 0;
+  background: #516583;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* General styles for cards */
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 100%;
+  min-width: 0; /* Prevent overflow */
+  box-sizing: border-box;
+}
+
+
+/* Individual chart card styles */
+#multi {
+  grid-area: multi;
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+  justify-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+#multi .chart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#multi .chart > div:first-child {
+  flex: 0 0 25%; /* gauges */
+}
+
+#multi .chart > div:last-child {
+  flex: 1;       /* xyContainer */
+}
+
+#stress {
+  grid-area: stress;
+}
+
+#steps {
+  grid-area: steps;
+}
+
+#status {
+  grid-area: status;
+}
+
+#avgstages {
+  grid-area: avgstages;
+}
+
+#laststages {
+  grid-area: laststages;
+}
+
+#index {
+  grid-area: index;
+}
+
+#activity {
+  grid-area: activity;
+}
+
+.chart {
+  width: 100%;
+  /* height: 200px; */
+  min-height: 150px;
+}
+
+.gauge {
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+  aspect-ratio: 1;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+}
+
+.pie {
+  width: 100%;
+  height: 300px;
+}
+
+.span {
+  width: 100%;
+  height: 300px;
+}
+
+.spider {
+  width: 100%;
+  height: 300px;
+}
+
+.mosaic {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive sizes */
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+      "multi multi multi stress"
+      "multi multi multi status"
+      "steps avgstages laststages index"
+      "activity activity activity activity";
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+      "multi multi multi"
+      "multi multi multi"
+      "stress status steps"
+      "avgstages laststages index"
+      "activity activity activity";
+  }
+  .chart {
+    height: 180px;
+    min-height: 120px;
+  }
+  .gauge {
+    height: 250px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "multi"
+      "stress"
+      "status" 
+      "steps"
+      "avgstages"
+      "laststages"
+      "index"
+      "activity";
+  }
+  .chart {
+    height: 150px;
+    min-height: 100px;
+  }
+  .gauge {
+    height: 200px;
+    max-width: 250px;
+    max-height: 250px;
+  }
+}

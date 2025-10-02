@@ -1,0 +1,6594 @@
+[
+  {
+    "date": "2021-05-23",
+    "hrv": {
+      "rmssd": 89.603,
+      "nremhr": 57.432,
+      "entropy": 3.148
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 23,
+        "minutes": 293,
+        "thirtyDayAvgMinutes": 317
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-05-24",
+    "hrv": {
+      "rmssd": 94.303,
+      "nremhr": 57.681,
+      "entropy": 3.231
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 114
+      },
+      "light": {
+        "count": 38,
+        "minutes": 220,
+        "thirtyDayAvgMinutes": 208
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 113
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-05-25",
+    "hrv": {
+      "rmssd": 119.212,
+      "nremhr": 57.481,
+      "entropy": 3.36
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 122,
+        "thirtyDayAvgMinutes": 112
+      },
+      "light": {
+        "count": 16,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 272
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 117
+      },
+      "wake": {
+        "count": 32,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-05-26",
+    "hrv": {
+      "rmssd": 111.709,
+      "nremhr": 57.493,
+      "entropy": 3.365
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 109
+      },
+      "light": {
+        "count": 31,
+        "minutes": 292,
+        "thirtyDayAvgMinutes": 303
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 84
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-05-27",
+    "hrv": {
+      "rmssd": 103.034,
+      "nremhr": 56.75,
+      "entropy": 3.262
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 130,
+        "thirtyDayAvgMinutes": 125
+      },
+      "light": {
+        "count": 23,
+        "minutes": 242,
+        "thirtyDayAvgMinutes": 263
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 89
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-05-28",
+    "hrv": {
+      "rmssd": 89.941,
+      "nremhr": 57.314,
+      "entropy": 3.143
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 108
+      },
+      "light": {
+        "count": 40,
+        "minutes": 266,
+        "thirtyDayAvgMinutes": 279
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2021-05-29",
+    "hrv": {
+      "rmssd": 92.763,
+      "nremhr": 61.9,
+      "entropy": 3.448
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 17,
+        "minutes": 234,
+        "thirtyDayAvgMinutes": 223
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 112
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-05-30",
+    "hrv": {
+      "rmssd": 109.509,
+      "nremhr": 58.652,
+      "entropy": 3.473
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 65
+      },
+      "light": {
+        "count": 32,
+        "minutes": 185,
+        "thirtyDayAvgMinutes": 168
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 111,
+        "thirtyDayAvgMinutes": 107
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-05-31",
+    "hrv": {
+      "rmssd": 117.717,
+      "nremhr": 56.507,
+      "entropy": 3.343
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 78
+      },
+      "light": {
+        "count": 39,
+        "minutes": 218,
+        "thirtyDayAvgMinutes": 208
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-06-01",
+    "hrv": {
+      "rmssd": 111.776,
+      "nremhr": 60.259,
+      "entropy": 3.515
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 104,
+        "thirtyDayAvgMinutes": 96
+      },
+      "light": {
+        "count": 38,
+        "minutes": 264,
+        "thirtyDayAvgMinutes": 287
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 116
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 10,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-06-02",
+    "hrv": {
+      "rmssd": 102.066,
+      "nremhr": 55.898,
+      "entropy": 3.206
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 108
+      },
+      "light": {
+        "count": 37,
+        "minutes": 267,
+        "thirtyDayAvgMinutes": 253
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-06-03",
+    "hrv": {
+      "rmssd": 102.604,
+      "nremhr": 56.439,
+      "entropy": 3.463
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 138
+      },
+      "light": {
+        "count": 30,
+        "minutes": 234,
+        "thirtyDayAvgMinutes": 244
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 112
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2021-06-04",
+    "hrv": {
+      "rmssd": 101.602,
+      "nremhr": 59.013,
+      "entropy": 3.532
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 118
+      },
+      "light": {
+        "count": 31,
+        "minutes": 275,
+        "thirtyDayAvgMinutes": 299
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-06-05",
+    "hrv": {
+      "rmssd": 115.292,
+      "nremhr": 56.57,
+      "entropy": 3.506
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 130
+      },
+      "light": {
+        "count": 19,
+        "minutes": 181,
+        "thirtyDayAvgMinutes": 195
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 75
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-06-06",
+    "hrv": {
+      "rmssd": 122.089,
+      "nremhr": 53.976,
+      "entropy": 3.37
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 115
+      },
+      "light": {
+        "count": 35,
+        "minutes": 194,
+        "thirtyDayAvgMinutes": 192
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 41,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-06-07",
+    "hrv": {
+      "rmssd": 97.144,
+      "nremhr": 55.706,
+      "entropy": 3.198
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 118
+      },
+      "light": {
+        "count": 25,
+        "minutes": 218,
+        "thirtyDayAvgMinutes": 205
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2021-06-08",
+    "hrv": {
+      "rmssd": 99.741,
+      "nremhr": 55.074,
+      "entropy": 3.207
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 111
+      },
+      "light": {
+        "count": 29,
+        "minutes": 250,
+        "thirtyDayAvgMinutes": 248
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 56
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-06-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 88
+      },
+      "light": {
+        "count": 19,
+        "minutes": 208,
+        "thirtyDayAvgMinutes": 221
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2021-06-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 100
+      },
+      "light": {
+        "count": 33,
+        "minutes": 195,
+        "thirtyDayAvgMinutes": 213
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 101
+      },
+      "wake": {
+        "count": 20,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-06-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 66
+      },
+      "light": {
+        "count": 27,
+        "minutes": 248,
+        "thirtyDayAvgMinutes": 264
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 102
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-06-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 104
+      },
+      "light": {
+        "count": 25,
+        "minutes": 183,
+        "thirtyDayAvgMinutes": 188
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 82
+      },
+      "wake": {
+        "count": 38,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-06-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 122,
+        "thirtyDayAvgMinutes": 111
+      },
+      "light": {
+        "count": 26,
+        "minutes": 245,
+        "thirtyDayAvgMinutes": 228
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 85
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 41
+      }
+    }
+  },
+  {
+    "date": "2021-06-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 73
+      },
+      "light": {
+        "count": 37,
+        "minutes": 231,
+        "thirtyDayAvgMinutes": 218
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 102
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-06-15",
+    "hrv": {
+      "rmssd": 97.102,
+      "nremhr": 58.476,
+      "entropy": 3.438
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 113
+      },
+      "light": {
+        "count": 15,
+        "minutes": 204,
+        "thirtyDayAvgMinutes": 186
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 116
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-06-16",
+    "hrv": {
+      "rmssd": 102.006,
+      "nremhr": 55.916,
+      "entropy": 3.305
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 114
+      },
+      "light": {
+        "count": 30,
+        "minutes": 227,
+        "thirtyDayAvgMinutes": 247
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 66
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-06-17",
+    "hrv": {
+      "rmssd": 95.983,
+      "nremhr": 56.504,
+      "entropy": 3.294
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 107
+      },
+      "light": {
+        "count": 28,
+        "minutes": 281,
+        "thirtyDayAvgMinutes": 305
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 60,
+        "thirtyDayAvgMinutes": 54
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-06-18",
+    "hrv": {
+      "rmssd": 107.832,
+      "nremhr": 54.92,
+      "entropy": 3.35
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 125,
+        "thirtyDayAvgMinutes": 125
+      },
+      "light": {
+        "count": 22,
+        "minutes": 292,
+        "thirtyDayAvgMinutes": 285
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 81,
+        "thirtyDayAvgMinutes": 79
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2021-06-19",
+    "hrv": {
+      "rmssd": 99.407,
+      "nremhr": 52.337,
+      "entropy": 3.196
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 131,
+        "thirtyDayAvgMinutes": 124
+      },
+      "light": {
+        "count": 32,
+        "minutes": 299,
+        "thirtyDayAvgMinutes": 294
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-06-20",
+    "hrv": {
+      "rmssd": 107.388,
+      "nremhr": 52.056,
+      "entropy": 3.24
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 129,
+        "thirtyDayAvgMinutes": 130
+      },
+      "light": {
+        "count": 19,
+        "minutes": 230,
+        "thirtyDayAvgMinutes": 252
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 111
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-06-21",
+    "hrv": {
+      "rmssd": 113.97,
+      "nremhr": 53.006,
+      "entropy": 3.226
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 76,
+        "thirtyDayAvgMinutes": 82
+      },
+      "light": {
+        "count": 27,
+        "minutes": 289,
+        "thirtyDayAvgMinutes": 312
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 32,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-06-22",
+    "hrv": {
+      "rmssd": 86.697,
+      "nremhr": 56.357,
+      "entropy": 3.409
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 81
+      },
+      "light": {
+        "count": 15,
+        "minutes": 221,
+        "thirtyDayAvgMinutes": 200
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 107
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-06-23",
+    "hrv": {
+      "rmssd": 93.842,
+      "nremhr": 53.588,
+      "entropy": 3.152
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 143
+      },
+      "light": {
+        "count": 19,
+        "minutes": 258,
+        "thirtyDayAvgMinutes": 280
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 98
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-06-24",
+    "hrv": {
+      "rmssd": 120.64,
+      "nremhr": 55.178,
+      "entropy": 3.374
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 140
+      },
+      "light": {
+        "count": 28,
+        "minutes": 272,
+        "thirtyDayAvgMinutes": 278
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 86,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 32,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-06-25",
+    "hrv": {
+      "rmssd": 108.625,
+      "nremhr": 52.2,
+      "entropy": 3.29
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 35,
+        "minutes": 196,
+        "thirtyDayAvgMinutes": 204
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 86,
+        "thirtyDayAvgMinutes": 84
+      },
+      "wake": {
+        "count": 42,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-06-26",
+    "hrv": {
+      "rmssd": 97.892,
+      "nremhr": 52.4,
+      "entropy": 3.147
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 92
+      },
+      "light": {
+        "count": 33,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 283
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 77
+      },
+      "wake": {
+        "count": 38,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-06-27",
+    "hrv": {
+      "rmssd": 97.892,
+      "nremhr": 52.825,
+      "entropy": 3.122
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 99
+      },
+      "light": {
+        "count": 35,
+        "minutes": 247,
+        "thirtyDayAvgMinutes": 236
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 98
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-06-28",
+    "hrv": {
+      "rmssd": 97.538,
+      "nremhr": 52.768,
+      "entropy": 3.142
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 115
+      },
+      "light": {
+        "count": 29,
+        "minutes": 198,
+        "thirtyDayAvgMinutes": 180
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-06-29",
+    "hrv": {
+      "rmssd": 104.673,
+      "nremhr": 55.817,
+      "entropy": 3.315
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 70
+      },
+      "light": {
+        "count": 30,
+        "minutes": 237,
+        "thirtyDayAvgMinutes": 229
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 84,
+        "thirtyDayAvgMinutes": 87
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-06-30",
+    "hrv": {
+      "rmssd": 104.583,
+      "nremhr": 55.044,
+      "entropy": 3.353
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 36,
+        "minutes": 232,
+        "thirtyDayAvgMinutes": 240
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 38,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2021-07-01",
+    "hrv": {
+      "rmssd": 92.352,
+      "nremhr": 57.651,
+      "entropy": 3.314
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 96
+      },
+      "light": {
+        "count": 20,
+        "minutes": 298,
+        "thirtyDayAvgMinutes": 309
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 111,
+        "thirtyDayAvgMinutes": 121
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 35
+      }
+    }
+  },
+  {
+    "date": "2021-07-02",
+    "hrv": {
+      "rmssd": 117.517,
+      "nremhr": 55.563,
+      "entropy": 3.513
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 123
+      },
+      "light": {
+        "count": 22,
+        "minutes": 196,
+        "thirtyDayAvgMinutes": 180
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 116
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-07-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 82
+      },
+      "light": {
+        "count": 37,
+        "minutes": 197,
+        "thirtyDayAvgMinutes": 215
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-07-04",
+    "hrv": {
+      "rmssd": 100.307,
+      "nremhr": 53.407,
+      "entropy": 3.113
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 91
+      },
+      "light": {
+        "count": 23,
+        "minutes": 274,
+        "thirtyDayAvgMinutes": 275
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 63
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 10,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-07-05",
+    "hrv": {
+      "rmssd": 99.445,
+      "nremhr": 55.42,
+      "entropy": 3.187
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 121
+      },
+      "light": {
+        "count": 27,
+        "minutes": 276,
+        "thirtyDayAvgMinutes": 296
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 64,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 40
+      }
+    }
+  },
+  {
+    "date": "2021-07-06",
+    "hrv": {
+      "rmssd": 80.192,
+      "nremhr": 56.259,
+      "entropy": 3.206
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 113
+      },
+      "light": {
+        "count": 25,
+        "minutes": 239,
+        "thirtyDayAvgMinutes": 228
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 101
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-07-07",
+    "hrv": {
+      "rmssd": 89.931,
+      "nremhr": 53.091,
+      "entropy": 3.185
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 73
+      },
+      "light": {
+        "count": 19,
+        "minutes": 230,
+        "thirtyDayAvgMinutes": 209
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 104,
+        "thirtyDayAvgMinutes": 99
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-07-08",
+    "hrv": {
+      "rmssd": 95.101,
+      "nremhr": 56.633,
+      "entropy": 3.307
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 99
+      },
+      "light": {
+        "count": 22,
+        "minutes": 262,
+        "thirtyDayAvgMinutes": 283
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 100
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-07-09",
+    "hrv": {
+      "rmssd": 99.571,
+      "nremhr": 55.078,
+      "entropy": 3.429
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 28,
+        "minutes": 264,
+        "thirtyDayAvgMinutes": 248
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 78
+      },
+      "wake": {
+        "count": 49,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-07-10",
+    "hrv": {
+      "rmssd": 97.882,
+      "nremhr": 56.134,
+      "entropy": 3.522
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 128,
+        "thirtyDayAvgMinutes": 141
+      },
+      "light": {
+        "count": 26,
+        "minutes": 254,
+        "thirtyDayAvgMinutes": 276
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 80
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 11
+      }
+    }
+  },
+  {
+    "date": "2021-07-11",
+    "hrv": {
+      "rmssd": 100.374,
+      "nremhr": 55.136,
+      "entropy": 3.343
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 148
+      },
+      "light": {
+        "count": 25,
+        "minutes": 191,
+        "thirtyDayAvgMinutes": 207
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 124
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-07-12",
+    "hrv": {
+      "rmssd": 96.671,
+      "nremhr": 55.023,
+      "entropy": 3.181
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 76
+      },
+      "light": {
+        "count": 36,
+        "minutes": 279,
+        "thirtyDayAvgMinutes": 260
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 114
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-07-13",
+    "hrv": {
+      "rmssd": 105.642,
+      "nremhr": 57.446,
+      "entropy": 3.358
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 105
+      },
+      "light": {
+        "count": 40,
+        "minutes": 211,
+        "thirtyDayAvgMinutes": 217
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 38,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-07-14",
+    "hrv": {
+      "rmssd": 90.907,
+      "nremhr": 63.959,
+      "entropy": 3.504
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 76
+      },
+      "light": {
+        "count": 23,
+        "minutes": 220,
+        "thirtyDayAvgMinutes": 227
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 119
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-07-15",
+    "hrv": {
+      "rmssd": 96.343,
+      "nremhr": 57.33,
+      "entropy": 3.401
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 66
+      },
+      "light": {
+        "count": 22,
+        "minutes": 273,
+        "thirtyDayAvgMinutes": 269
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-07-16",
+    "hrv": {
+      "rmssd": 103.011,
+      "nremhr": 57.675,
+      "entropy": 3.357
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 83
+      },
+      "light": {
+        "count": 23,
+        "minutes": 226,
+        "thirtyDayAvgMinutes": 246
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 81
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-07-17",
+    "hrv": {
+      "rmssd": 107.148,
+      "nremhr": 56.587,
+      "entropy": 3.39
+    },
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 87
+      },
+      "light": {
+        "count": 30,
+        "minutes": 297,
+        "thirtyDayAvgMinutes": 316
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-07-18",
+    "hrv": {
+      "rmssd": 94.616,
+      "nremhr": 59.798,
+      "entropy": 3.358
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 69,
+        "thirtyDayAvgMinutes": 69
+      },
+      "light": {
+        "count": 26,
+        "minutes": 256,
+        "thirtyDayAvgMinutes": 260
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 100
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-07-19",
+    "hrv": {
+      "rmssd": 98.515,
+      "nremhr": 60.389,
+      "entropy": 3.606
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 81
+      },
+      "light": {
+        "count": 16,
+        "minutes": 297,
+        "thirtyDayAvgMinutes": 298
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 113
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 40
+      }
+    }
+  },
+  {
+    "date": "2021-07-20",
+    "hrv": {
+      "rmssd": 106.337,
+      "nremhr": 56.447,
+      "entropy": 3.424
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 72
+      },
+      "light": {
+        "count": 28,
+        "minutes": 293,
+        "thirtyDayAvgMinutes": 307
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-07-21",
+    "hrv": {
+      "rmssd": 101.8,
+      "nremhr": 66.806,
+      "entropy": 3.719
+    },
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 126,
+        "thirtyDayAvgMinutes": 133
+      },
+      "light": {
+        "count": 19,
+        "minutes": 273,
+        "thirtyDayAvgMinutes": 251
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 102
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-07-22",
+    "hrv": {
+      "rmssd": 103.456,
+      "nremhr": 60.122,
+      "entropy": 3.472
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 32,
+        "minutes": 282,
+        "thirtyDayAvgMinutes": 268
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 105
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-07-23",
+    "hrv": {
+      "rmssd": 85.262,
+      "nremhr": 56.974,
+      "entropy": 3.157
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 93
+      },
+      "light": {
+        "count": 37,
+        "minutes": 270,
+        "thirtyDayAvgMinutes": 272
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 113
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-07-24",
+    "hrv": {
+      "rmssd": 86.985,
+      "nremhr": 56.871,
+      "entropy": 3.216
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 121,
+        "thirtyDayAvgMinutes": 111
+      },
+      "light": {
+        "count": 34,
+        "minutes": 256,
+        "thirtyDayAvgMinutes": 237
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-07-25",
+    "hrv": {
+      "rmssd": 81.741,
+      "nremhr": 56.034,
+      "entropy": 3.001
+    },
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 111,
+        "thirtyDayAvgMinutes": 109
+      },
+      "light": {
+        "count": 32,
+        "minutes": 195,
+        "thirtyDayAvgMinutes": 203
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-07-26",
+    "hrv": {
+      "rmssd": 100.574,
+      "nremhr": 56.949,
+      "entropy": 3.456
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 79
+      },
+      "light": {
+        "count": 32,
+        "minutes": 182,
+        "thirtyDayAvgMinutes": 183
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 26,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-07-27",
+    "hrv": {
+      "rmssd": 97.232,
+      "nremhr": 54.064,
+      "entropy": 3.072
+    },
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 60,
+        "thirtyDayAvgMinutes": 54
+      },
+      "light": {
+        "count": 32,
+        "minutes": 256,
+        "thirtyDayAvgMinutes": 245
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 111
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-07-28",
+    "hrv": {
+      "rmssd": 103.555,
+      "nremhr": 61.086,
+      "entropy": 3.629
+    },
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 146
+      },
+      "light": {
+        "count": 17,
+        "minutes": 286,
+        "thirtyDayAvgMinutes": 308
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 85
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-07-29",
+    "hrv": {
+      "rmssd": 90.641,
+      "nremhr": 58.021,
+      "entropy": 3.305
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 126,
+        "thirtyDayAvgMinutes": 137
+      },
+      "light": {
+        "count": 29,
+        "minutes": 280,
+        "thirtyDayAvgMinutes": 303
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-07-30",
+    "hrv": {
+      "rmssd": 86.15,
+      "nremhr": 57.942,
+      "entropy": 3.362
+    },
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 102,
+        "thirtyDayAvgMinutes": 92
+      },
+      "light": {
+        "count": 27,
+        "minutes": 287,
+        "thirtyDayAvgMinutes": 300
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 117
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-07-31",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 90
+      },
+      "light": {
+        "count": 27,
+        "minutes": 255,
+        "thirtyDayAvgMinutes": 233
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 82
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-08-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 25,
+        "minutes": 290,
+        "thirtyDayAvgMinutes": 276
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 85
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-08-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 121
+      },
+      "light": {
+        "count": 18,
+        "minutes": 272,
+        "thirtyDayAvgMinutes": 294
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-08-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 37,
+        "minutes": 184,
+        "thirtyDayAvgMinutes": 182
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2021-08-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 134
+      },
+      "light": {
+        "count": 26,
+        "minutes": 236,
+        "thirtyDayAvgMinutes": 223
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 81,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 20,
+        "minutes": 32,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-08-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 62
+      },
+      "light": {
+        "count": 27,
+        "minutes": 292,
+        "thirtyDayAvgMinutes": 299
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 63,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-08-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 88
+      },
+      "light": {
+        "count": 16,
+        "minutes": 237,
+        "thirtyDayAvgMinutes": 229
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 110
+      },
+      "wake": {
+        "count": 49,
+        "minutes": 26,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-08-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 90
+      },
+      "light": {
+        "count": 33,
+        "minutes": 246,
+        "thirtyDayAvgMinutes": 267
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 101
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2021-08-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 66
+      },
+      "light": {
+        "count": 26,
+        "minutes": 208,
+        "thirtyDayAvgMinutes": 215
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 78
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 11
+      }
+    }
+  },
+  {
+    "date": "2021-08-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 102,
+        "thirtyDayAvgMinutes": 112
+      },
+      "light": {
+        "count": 27,
+        "minutes": 194,
+        "thirtyDayAvgMinutes": 177
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 78,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-08-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 28,
+        "minutes": 267,
+        "thirtyDayAvgMinutes": 283
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 99
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-08-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 86
+      },
+      "light": {
+        "count": 24,
+        "minutes": 195,
+        "thirtyDayAvgMinutes": 203
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 72
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-08-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 74,
+        "thirtyDayAvgMinutes": 80
+      },
+      "light": {
+        "count": 38,
+        "minutes": 204,
+        "thirtyDayAvgMinutes": 214
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-08-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 105
+      },
+      "light": {
+        "count": 25,
+        "minutes": 219,
+        "thirtyDayAvgMinutes": 230
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-08-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 59
+      },
+      "light": {
+        "count": 37,
+        "minutes": 239,
+        "thirtyDayAvgMinutes": 225
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 120
+      },
+      "wake": {
+        "count": 32,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-08-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 134,
+        "thirtyDayAvgMinutes": 136
+      },
+      "light": {
+        "count": 20,
+        "minutes": 294,
+        "thirtyDayAvgMinutes": 271
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 41,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-08-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 112,
+        "thirtyDayAvgMinutes": 107
+      },
+      "light": {
+        "count": 17,
+        "minutes": 228,
+        "thirtyDayAvgMinutes": 220
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 77
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-08-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 73
+      },
+      "light": {
+        "count": 39,
+        "minutes": 248,
+        "thirtyDayAvgMinutes": 236
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 76
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-08-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 89
+      },
+      "light": {
+        "count": 23,
+        "minutes": 279,
+        "thirtyDayAvgMinutes": 255
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-08-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 117
+      },
+      "light": {
+        "count": 23,
+        "minutes": 228,
+        "thirtyDayAvgMinutes": 219
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 105
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-08-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 119
+      },
+      "light": {
+        "count": 34,
+        "minutes": 188,
+        "thirtyDayAvgMinutes": 200
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 108
+      },
+      "wake": {
+        "count": 49,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-08-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 39,
+        "minutes": 271,
+        "thirtyDayAvgMinutes": 247
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 76
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-08-22",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 103
+      },
+      "light": {
+        "count": 24,
+        "minutes": 190,
+        "thirtyDayAvgMinutes": 204
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 42,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-08-23",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 139,
+        "thirtyDayAvgMinutes": 131
+      },
+      "light": {
+        "count": 27,
+        "minutes": 189,
+        "thirtyDayAvgMinutes": 197
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 63
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-08-24",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 30,
+        "minutes": 203,
+        "thirtyDayAvgMinutes": 205
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 61
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-08-25",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 130,
+        "thirtyDayAvgMinutes": 131
+      },
+      "light": {
+        "count": 23,
+        "minutes": 277,
+        "thirtyDayAvgMinutes": 257
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 73
+      },
+      "wake": {
+        "count": 37,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-08-26",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 126,
+        "thirtyDayAvgMinutes": 134
+      },
+      "light": {
+        "count": 31,
+        "minutes": 198,
+        "thirtyDayAvgMinutes": 195
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 70
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-08-27",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 79
+      },
+      "light": {
+        "count": 37,
+        "minutes": 244,
+        "thirtyDayAvgMinutes": 223
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 101
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-08-28",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 140,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 30,
+        "minutes": 232,
+        "thirtyDayAvgMinutes": 231
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 77
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-08-29",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 85
+      },
+      "light": {
+        "count": 30,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 252
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 84,
+        "thirtyDayAvgMinutes": 81
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2021-08-30",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 74
+      },
+      "light": {
+        "count": 21,
+        "minutes": 261,
+        "thirtyDayAvgMinutes": 268
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 104,
+        "thirtyDayAvgMinutes": 114
+      },
+      "wake": {
+        "count": 41,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-08-31",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 136
+      },
+      "light": {
+        "count": 29,
+        "minutes": 290,
+        "thirtyDayAvgMinutes": 292
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 107
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-09-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 38,
+        "minutes": 202,
+        "thirtyDayAvgMinutes": 210
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-09-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 139,
+        "thirtyDayAvgMinutes": 136
+      },
+      "light": {
+        "count": 37,
+        "minutes": 281,
+        "thirtyDayAvgMinutes": 270
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 64,
+        "thirtyDayAvgMinutes": 66
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-09-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 112,
+        "thirtyDayAvgMinutes": 110
+      },
+      "light": {
+        "count": 19,
+        "minutes": 231,
+        "thirtyDayAvgMinutes": 218
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 63,
+        "thirtyDayAvgMinutes": 62
+      },
+      "wake": {
+        "count": 37,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 11
+      }
+    }
+  },
+  {
+    "date": "2021-09-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 131
+      },
+      "light": {
+        "count": 36,
+        "minutes": 252,
+        "thirtyDayAvgMinutes": 228
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 76,
+        "thirtyDayAvgMinutes": 81
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-09-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 19,
+        "minutes": 216,
+        "thirtyDayAvgMinutes": 236
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 87
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-09-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 60,
+        "thirtyDayAvgMinutes": 66
+      },
+      "light": {
+        "count": 30,
+        "minutes": 238,
+        "thirtyDayAvgMinutes": 222
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 111
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-09-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 109
+      },
+      "light": {
+        "count": 29,
+        "minutes": 297,
+        "thirtyDayAvgMinutes": 323
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 81
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-09-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 117
+      },
+      "light": {
+        "count": 23,
+        "minutes": 189,
+        "thirtyDayAvgMinutes": 170
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 126
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-09-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 111,
+        "thirtyDayAvgMinutes": 110
+      },
+      "light": {
+        "count": 34,
+        "minutes": 276,
+        "thirtyDayAvgMinutes": 259
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 71
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-09-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 90
+      },
+      "light": {
+        "count": 29,
+        "minutes": 276,
+        "thirtyDayAvgMinutes": 303
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 102,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-09-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 78
+      },
+      "light": {
+        "count": 20,
+        "minutes": 246,
+        "thirtyDayAvgMinutes": 260
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 123
+      },
+      "wake": {
+        "count": 37,
+        "minutes": 32,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-09-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 107
+      },
+      "light": {
+        "count": 27,
+        "minutes": 268,
+        "thirtyDayAvgMinutes": 265
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2021-09-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 61
+      },
+      "light": {
+        "count": 30,
+        "minutes": 253,
+        "thirtyDayAvgMinutes": 257
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 111
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 35
+      }
+    }
+  },
+  {
+    "date": "2021-09-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 135
+      },
+      "light": {
+        "count": 33,
+        "minutes": 213,
+        "thirtyDayAvgMinutes": 215
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 69
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 39
+      }
+    }
+  },
+  {
+    "date": "2021-09-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 16,
+        "minutes": 196,
+        "thirtyDayAvgMinutes": 187
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 99
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 26,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-09-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 69
+      },
+      "light": {
+        "count": 31,
+        "minutes": 288,
+        "thirtyDayAvgMinutes": 296
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 41,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-09-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 78
+      },
+      "light": {
+        "count": 24,
+        "minutes": 279,
+        "thirtyDayAvgMinutes": 297
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 72
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-09-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 135,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 27,
+        "minutes": 231,
+        "thirtyDayAvgMinutes": 247
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-09-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 127
+      },
+      "light": {
+        "count": 15,
+        "minutes": 216,
+        "thirtyDayAvgMinutes": 220
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 111,
+        "thirtyDayAvgMinutes": 113
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-09-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 86
+      },
+      "light": {
+        "count": 20,
+        "minutes": 191,
+        "thirtyDayAvgMinutes": 187
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 71
+      },
+      "wake": {
+        "count": 42,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-09-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 63
+      },
+      "light": {
+        "count": 32,
+        "minutes": 282,
+        "thirtyDayAvgMinutes": 308
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 62,
+        "thirtyDayAvgMinutes": 58
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-09-22",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 74,
+        "thirtyDayAvgMinutes": 80
+      },
+      "light": {
+        "count": 20,
+        "minutes": 199,
+        "thirtyDayAvgMinutes": 205
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 69,
+        "thirtyDayAvgMinutes": 72
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-09-23",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 102
+      },
+      "light": {
+        "count": 30,
+        "minutes": 280,
+        "thirtyDayAvgMinutes": 292
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 87
+      },
+      "wake": {
+        "count": 48,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-09-24",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 133
+      },
+      "light": {
+        "count": 30,
+        "minutes": 227,
+        "thirtyDayAvgMinutes": 239
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 102
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-09-25",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 69,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 18,
+        "minutes": 269,
+        "thirtyDayAvgMinutes": 248
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 66
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-09-26",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 104,
+        "thirtyDayAvgMinutes": 114
+      },
+      "light": {
+        "count": 34,
+        "minutes": 220,
+        "thirtyDayAvgMinutes": 214
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 93
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-09-27",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 126,
+        "thirtyDayAvgMinutes": 131
+      },
+      "light": {
+        "count": 28,
+        "minutes": 280,
+        "thirtyDayAvgMinutes": 293
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 60,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-09-28",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 124
+      },
+      "light": {
+        "count": 24,
+        "minutes": 281,
+        "thirtyDayAvgMinutes": 265
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2021-09-29",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 116,
+        "thirtyDayAvgMinutes": 123
+      },
+      "light": {
+        "count": 29,
+        "minutes": 236,
+        "thirtyDayAvgMinutes": 248
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 40
+      }
+    }
+  },
+  {
+    "date": "2021-09-30",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 85
+      },
+      "light": {
+        "count": 23,
+        "minutes": 235,
+        "thirtyDayAvgMinutes": 254
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 121
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 36,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-10-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 99,
+        "thirtyDayAvgMinutes": 101
+      },
+      "light": {
+        "count": 22,
+        "minutes": 201,
+        "thirtyDayAvgMinutes": 194
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 118
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-10-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 28,
+        "minutes": 217,
+        "thirtyDayAvgMinutes": 221
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-10-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 119
+      },
+      "light": {
+        "count": 36,
+        "minutes": 289,
+        "thirtyDayAvgMinutes": 289
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2021-10-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 109
+      },
+      "light": {
+        "count": 33,
+        "minutes": 300,
+        "thirtyDayAvgMinutes": 311
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 99
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-10-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 125,
+        "thirtyDayAvgMinutes": 123
+      },
+      "light": {
+        "count": 22,
+        "minutes": 211,
+        "thirtyDayAvgMinutes": 219
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 82,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 32,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-10-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 116
+      },
+      "light": {
+        "count": 25,
+        "minutes": 212,
+        "thirtyDayAvgMinutes": 192
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 84,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-10-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 89
+      },
+      "light": {
+        "count": 36,
+        "minutes": 248,
+        "thirtyDayAvgMinutes": 271
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 33,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-10-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 93
+      },
+      "light": {
+        "count": 34,
+        "minutes": 239,
+        "thirtyDayAvgMinutes": 261
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 117
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-10-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 129
+      },
+      "light": {
+        "count": 21,
+        "minutes": 257,
+        "thirtyDayAvgMinutes": 251
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 76
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 26,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-10-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 133,
+        "thirtyDayAvgMinutes": 142
+      },
+      "light": {
+        "count": 23,
+        "minutes": 243,
+        "thirtyDayAvgMinutes": 225
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-10-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 64
+      },
+      "light": {
+        "count": 33,
+        "minutes": 294,
+        "thirtyDayAvgMinutes": 299
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-10-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 74,
+        "thirtyDayAvgMinutes": 68
+      },
+      "light": {
+        "count": 27,
+        "minutes": 230,
+        "thirtyDayAvgMinutes": 228
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 108
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-10-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 131,
+        "thirtyDayAvgMinutes": 122
+      },
+      "light": {
+        "count": 32,
+        "minutes": 207,
+        "thirtyDayAvgMinutes": 218
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 99
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-10-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 120
+      },
+      "light": {
+        "count": 25,
+        "minutes": 261,
+        "thirtyDayAvgMinutes": 256
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 63
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-10-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 96
+      },
+      "light": {
+        "count": 28,
+        "minutes": 211,
+        "thirtyDayAvgMinutes": 218
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-10-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 135,
+        "thirtyDayAvgMinutes": 123
+      },
+      "light": {
+        "count": 18,
+        "minutes": 192,
+        "thirtyDayAvgMinutes": 196
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-10-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 133
+      },
+      "light": {
+        "count": 24,
+        "minutes": 181,
+        "thirtyDayAvgMinutes": 166
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 78
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-10-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 96
+      },
+      "light": {
+        "count": 21,
+        "minutes": 247,
+        "thirtyDayAvgMinutes": 238
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 108
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-10-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 95,
+        "thirtyDayAvgMinutes": 87
+      },
+      "light": {
+        "count": 31,
+        "minutes": 293,
+        "thirtyDayAvgMinutes": 308
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 77
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 11
+      }
+    }
+  },
+  {
+    "date": "2021-10-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 74,
+        "thirtyDayAvgMinutes": 76
+      },
+      "light": {
+        "count": 28,
+        "minutes": 270,
+        "thirtyDayAvgMinutes": 282
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 127
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-10-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 104
+      },
+      "light": {
+        "count": 38,
+        "minutes": 204,
+        "thirtyDayAvgMinutes": 221
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 113
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-10-22",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 126,
+        "thirtyDayAvgMinutes": 131
+      },
+      "light": {
+        "count": 23,
+        "minutes": 251,
+        "thirtyDayAvgMinutes": 249
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 93
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-10-23",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 145
+      },
+      "light": {
+        "count": 34,
+        "minutes": 204,
+        "thirtyDayAvgMinutes": 201
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 86
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-10-24",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 139,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 33,
+        "minutes": 211,
+        "thirtyDayAvgMinutes": 211
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 98
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-10-25",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 112
+      },
+      "light": {
+        "count": 18,
+        "minutes": 200,
+        "thirtyDayAvgMinutes": 196
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 81,
+        "thirtyDayAvgMinutes": 81
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-10-26",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 91
+      },
+      "light": {
+        "count": 24,
+        "minutes": 277,
+        "thirtyDayAvgMinutes": 275
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 82
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-10-27",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 71
+      },
+      "light": {
+        "count": 30,
+        "minutes": 199,
+        "thirtyDayAvgMinutes": 180
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 74
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 10,
+        "thirtyDayAvgMinutes": 11
+      }
+    }
+  },
+  {
+    "date": "2021-10-28",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 16,
+        "minutes": 243,
+        "thirtyDayAvgMinutes": 241
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 89
+      },
+      "wake": {
+        "count": 34,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-10-29",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 128,
+        "thirtyDayAvgMinutes": 116
+      },
+      "light": {
+        "count": 35,
+        "minutes": 269,
+        "thirtyDayAvgMinutes": 253
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 107
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-10-30",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 69
+      },
+      "light": {
+        "count": 39,
+        "minutes": 181,
+        "thirtyDayAvgMinutes": 170
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 70
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-10-31",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 32,
+        "minutes": 202,
+        "thirtyDayAvgMinutes": 191
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2021-11-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 129
+      },
+      "light": {
+        "count": 27,
+        "minutes": 236,
+        "thirtyDayAvgMinutes": 232
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 37
+      }
+    }
+  },
+  {
+    "date": "2021-11-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 81,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 20,
+        "minutes": 245,
+        "thirtyDayAvgMinutes": 235
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 103
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 25,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-11-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 132,
+        "thirtyDayAvgMinutes": 134
+      },
+      "light": {
+        "count": 37,
+        "minutes": 292,
+        "thirtyDayAvgMinutes": 273
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 42
+      }
+    }
+  },
+  {
+    "date": "2021-11-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 100
+      },
+      "light": {
+        "count": 16,
+        "minutes": 184,
+        "thirtyDayAvgMinutes": 183
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 104
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-11-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 63,
+        "thirtyDayAvgMinutes": 69
+      },
+      "light": {
+        "count": 19,
+        "minutes": 289,
+        "thirtyDayAvgMinutes": 316
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 70
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-11-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 111
+      },
+      "light": {
+        "count": 17,
+        "minutes": 257,
+        "thirtyDayAvgMinutes": 275
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 88
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-11-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 123,
+        "thirtyDayAvgMinutes": 120
+      },
+      "light": {
+        "count": 21,
+        "minutes": 237,
+        "thirtyDayAvgMinutes": 239
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-11-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 32,
+        "minutes": 238,
+        "thirtyDayAvgMinutes": 237
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 85
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 36,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-11-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 65
+      },
+      "light": {
+        "count": 15,
+        "minutes": 227,
+        "thirtyDayAvgMinutes": 224
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 80,
+        "thirtyDayAvgMinutes": 73
+      },
+      "wake": {
+        "count": 42,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-11-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 21,
+        "minutes": 294,
+        "thirtyDayAvgMinutes": 279
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 90
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 34,
+        "thirtyDayAvgMinutes": 35
+      }
+    }
+  },
+  {
+    "date": "2021-11-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 66
+      },
+      "light": {
+        "count": 38,
+        "minutes": 232,
+        "thirtyDayAvgMinutes": 231
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-11-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 38,
+        "minutes": 210,
+        "thirtyDayAvgMinutes": 202
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 86,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2021-11-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 137,
+        "thirtyDayAvgMinutes": 145
+      },
+      "light": {
+        "count": 29,
+        "minutes": 281,
+        "thirtyDayAvgMinutes": 292
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 64,
+        "thirtyDayAvgMinutes": 68
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 10,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2021-11-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 136,
+        "thirtyDayAvgMinutes": 129
+      },
+      "light": {
+        "count": 38,
+        "minutes": 216,
+        "thirtyDayAvgMinutes": 232
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 64,
+        "thirtyDayAvgMinutes": 63
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2021-11-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 92,
+        "thirtyDayAvgMinutes": 99
+      },
+      "light": {
+        "count": 38,
+        "minutes": 282,
+        "thirtyDayAvgMinutes": 267
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 89
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-11-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 129
+      },
+      "light": {
+        "count": 32,
+        "minutes": 257,
+        "thirtyDayAvgMinutes": 268
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 104
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-11-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 25,
+        "minutes": 291,
+        "thirtyDayAvgMinutes": 275
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 62,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-11-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 99,
+        "thirtyDayAvgMinutes": 104
+      },
+      "light": {
+        "count": 18,
+        "minutes": 270,
+        "thirtyDayAvgMinutes": 271
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 119
+      },
+      "wake": {
+        "count": 37,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-11-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 16,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 235
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 67,
+        "thirtyDayAvgMinutes": 68
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 39
+      }
+    }
+  },
+  {
+    "date": "2021-11-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 105,
+        "thirtyDayAvgMinutes": 112
+      },
+      "light": {
+        "count": 17,
+        "minutes": 286,
+        "thirtyDayAvgMinutes": 258
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 69,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-11-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 129,
+        "thirtyDayAvgMinutes": 128
+      },
+      "light": {
+        "count": 18,
+        "minutes": 271,
+        "thirtyDayAvgMinutes": 256
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 84,
+        "thirtyDayAvgMinutes": 78
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-11-22",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 135,
+        "thirtyDayAvgMinutes": 126
+      },
+      "light": {
+        "count": 28,
+        "minutes": 187,
+        "thirtyDayAvgMinutes": 201
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 83
+      },
+      "wake": {
+        "count": 41,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-11-23",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 90
+      },
+      "light": {
+        "count": 16,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 245
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 84
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-11-24",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 80
+      },
+      "light": {
+        "count": 15,
+        "minutes": 298,
+        "thirtyDayAvgMinutes": 277
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 92,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 41
+      }
+    }
+  },
+  {
+    "date": "2021-11-25",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 127,
+        "thirtyDayAvgMinutes": 129
+      },
+      "light": {
+        "count": 39,
+        "minutes": 260,
+        "thirtyDayAvgMinutes": 260
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 60,
+        "thirtyDayAvgMinutes": 61
+      },
+      "wake": {
+        "count": 38,
+        "minutes": 39,
+        "thirtyDayAvgMinutes": 40
+      }
+    }
+  },
+  {
+    "date": "2021-11-26",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 139,
+        "thirtyDayAvgMinutes": 133
+      },
+      "light": {
+        "count": 33,
+        "minutes": 220,
+        "thirtyDayAvgMinutes": 212
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 126
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2021-11-27",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 124,
+        "thirtyDayAvgMinutes": 115
+      },
+      "light": {
+        "count": 30,
+        "minutes": 264,
+        "thirtyDayAvgMinutes": 254
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 80
+      },
+      "wake": {
+        "count": 46,
+        "minutes": 12,
+        "thirtyDayAvgMinutes": 12
+      }
+    }
+  },
+  {
+    "date": "2021-11-28",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 70,
+        "thirtyDayAvgMinutes": 75
+      },
+      "light": {
+        "count": 26,
+        "minutes": 238,
+        "thirtyDayAvgMinutes": 234
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 90,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 22,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-11-29",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 33,
+        "minutes": 282,
+        "thirtyDayAvgMinutes": 275
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 102,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 21,
+        "thirtyDayAvgMinutes": 23
+      }
+    }
+  },
+  {
+    "date": "2021-11-30",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 60
+      },
+      "light": {
+        "count": 18,
+        "minutes": 296,
+        "thirtyDayAvgMinutes": 295
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 92
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-12-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 106,
+        "thirtyDayAvgMinutes": 111
+      },
+      "light": {
+        "count": 38,
+        "minutes": 250,
+        "thirtyDayAvgMinutes": 244
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 68
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-12-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 69,
+        "thirtyDayAvgMinutes": 71
+      },
+      "light": {
+        "count": 36,
+        "minutes": 248,
+        "thirtyDayAvgMinutes": 260
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 62,
+        "thirtyDayAvgMinutes": 58
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 15,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-12-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 118
+      },
+      "light": {
+        "count": 23,
+        "minutes": 284,
+        "thirtyDayAvgMinutes": 261
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-12-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 76,
+        "thirtyDayAvgMinutes": 78
+      },
+      "light": {
+        "count": 18,
+        "minutes": 201,
+        "thirtyDayAvgMinutes": 203
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 73,
+        "thirtyDayAvgMinutes": 69
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-12-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 69
+      },
+      "light": {
+        "count": 27,
+        "minutes": 185,
+        "thirtyDayAvgMinutes": 177
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 100
+      },
+      "wake": {
+        "count": 49,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2021-12-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 104
+      },
+      "light": {
+        "count": 20,
+        "minutes": 213,
+        "thirtyDayAvgMinutes": 233
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 88
+      },
+      "wake": {
+        "count": 32,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-12-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 71,
+        "thirtyDayAvgMinutes": 72
+      },
+      "light": {
+        "count": 34,
+        "minutes": 195,
+        "thirtyDayAvgMinutes": 208
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 97
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 29
+      }
+    }
+  },
+  {
+    "date": "2021-12-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 87
+      },
+      "light": {
+        "count": 25,
+        "minutes": 242,
+        "thirtyDayAvgMinutes": 259
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 112,
+        "thirtyDayAvgMinutes": 120
+      },
+      "wake": {
+        "count": 32,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-12-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 89
+      },
+      "light": {
+        "count": 28,
+        "minutes": 249,
+        "thirtyDayAvgMinutes": 240
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 65
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 25
+      }
+    }
+  },
+  {
+    "date": "2021-12-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 105
+      },
+      "light": {
+        "count": 36,
+        "minutes": 293,
+        "thirtyDayAvgMinutes": 303
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 100,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 36
+      }
+    }
+  },
+  {
+    "date": "2021-12-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 67,
+        "thirtyDayAvgMinutes": 73
+      },
+      "light": {
+        "count": 39,
+        "minutes": 207,
+        "thirtyDayAvgMinutes": 190
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 119
+      },
+      "wake": {
+        "count": 49,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2021-12-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 125
+      },
+      "light": {
+        "count": 34,
+        "minutes": 236,
+        "thirtyDayAvgMinutes": 254
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 115
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 38,
+        "thirtyDayAvgMinutes": 39
+      }
+    }
+  },
+  {
+    "date": "2021-12-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 114
+      },
+      "light": {
+        "count": 39,
+        "minutes": 183,
+        "thirtyDayAvgMinutes": 165
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 97,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-12-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 67,
+        "thirtyDayAvgMinutes": 62
+      },
+      "light": {
+        "count": 34,
+        "minutes": 190,
+        "thirtyDayAvgMinutes": 189
+      },
+      "rem": {
+        "count": 16,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 72
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 32,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-12-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 80
+      },
+      "light": {
+        "count": 27,
+        "minutes": 274,
+        "thirtyDayAvgMinutes": 248
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 74,
+        "thirtyDayAvgMinutes": 70
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2021-12-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 76
+      },
+      "light": {
+        "count": 29,
+        "minutes": 273,
+        "thirtyDayAvgMinutes": 295
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 113,
+        "thirtyDayAvgMinutes": 104
+      },
+      "wake": {
+        "count": 33,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2021-12-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 71
+      },
+      "light": {
+        "count": 30,
+        "minutes": 183,
+        "thirtyDayAvgMinutes": 192
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 72,
+        "thirtyDayAvgMinutes": 79
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 31,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2021-12-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 130,
+        "thirtyDayAvgMinutes": 130
+      },
+      "light": {
+        "count": 32,
+        "minutes": 206,
+        "thirtyDayAvgMinutes": 208
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 79
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-12-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 80
+      },
+      "light": {
+        "count": 21,
+        "minutes": 215,
+        "thirtyDayAvgMinutes": 235
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 36,
+        "thirtyDayAvgMinutes": 34
+      }
+    }
+  },
+  {
+    "date": "2021-12-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 66,
+        "thirtyDayAvgMinutes": 61
+      },
+      "light": {
+        "count": 21,
+        "minutes": 234,
+        "thirtyDayAvgMinutes": 219
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 83,
+        "thirtyDayAvgMinutes": 88
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 28,
+        "thirtyDayAvgMinutes": 30
+      }
+    }
+  },
+  {
+    "date": "2021-12-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 103
+      },
+      "light": {
+        "count": 17,
+        "minutes": 187,
+        "thirtyDayAvgMinutes": 175
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 93
+      },
+      "wake": {
+        "count": 26,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 28
+      }
+    }
+  },
+  {
+    "date": "2021-12-22",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 60
+      },
+      "light": {
+        "count": 35,
+        "minutes": 258,
+        "thirtyDayAvgMinutes": 254
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 118
+      },
+      "wake": {
+        "count": 35,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 24
+      }
+    }
+  },
+  {
+    "date": "2021-12-23",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 110,
+        "thirtyDayAvgMinutes": 113
+      },
+      "light": {
+        "count": 30,
+        "minutes": 239,
+        "thirtyDayAvgMinutes": 259
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 94,
+        "thirtyDayAvgMinutes": 95
+      },
+      "wake": {
+        "count": 36,
+        "minutes": 17,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2021-12-24",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 138,
+        "thirtyDayAvgMinutes": 138
+      },
+      "light": {
+        "count": 23,
+        "minutes": 232,
+        "thirtyDayAvgMinutes": 216
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 126
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 36,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2021-12-25",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 122
+      },
+      "light": {
+        "count": 18,
+        "minutes": 299,
+        "thirtyDayAvgMinutes": 316
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 64
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 16
+      }
+    }
+  },
+  {
+    "date": "2021-12-26",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 89,
+        "thirtyDayAvgMinutes": 83
+      },
+      "light": {
+        "count": 29,
+        "minutes": 250,
+        "thirtyDayAvgMinutes": 267
+      },
+      "rem": {
+        "count": 9,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 117
+      },
+      "wake": {
+        "count": 50,
+        "minutes": 27,
+        "thirtyDayAvgMinutes": 26
+      }
+    }
+  },
+  {
+    "date": "2021-12-27",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 140,
+        "thirtyDayAvgMinutes": 132
+      },
+      "light": {
+        "count": 26,
+        "minutes": 292,
+        "thirtyDayAvgMinutes": 315
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 76,
+        "thirtyDayAvgMinutes": 83
+      },
+      "wake": {
+        "count": 45,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2021-12-28",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 86
+      },
+      "light": {
+        "count": 16,
+        "minutes": 204,
+        "thirtyDayAvgMinutes": 219
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 76,
+        "thirtyDayAvgMinutes": 70
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 13
+      }
+    }
+  },
+  {
+    "date": "2021-12-29",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 95
+      },
+      "light": {
+        "count": 27,
+        "minutes": 296,
+        "thirtyDayAvgMinutes": 325
+      },
+      "rem": {
+        "count": 8,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 82
+      },
+      "wake": {
+        "count": 44,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2021-12-30",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 125
+      },
+      "light": {
+        "count": 16,
+        "minutes": 237,
+        "thirtyDayAvgMinutes": 220
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 35
+      }
+    }
+  },
+  {
+    "date": "2021-12-31",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 117,
+        "thirtyDayAvgMinutes": 126
+      },
+      "light": {
+        "count": 34,
+        "minutes": 226,
+        "thirtyDayAvgMinutes": 212
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 112,
+        "thirtyDayAvgMinutes": 111
+      },
+      "wake": {
+        "count": 43,
+        "minutes": 18,
+        "thirtyDayAvgMinutes": 18
+      }
+    }
+  },
+  {
+    "date": "2022-01-01",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 101,
+        "thirtyDayAvgMinutes": 110
+      },
+      "light": {
+        "count": 22,
+        "minutes": 189,
+        "thirtyDayAvgMinutes": 192
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 103
+      },
+      "wake": {
+        "count": 25,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 32
+      }
+    }
+  },
+  {
+    "date": "2022-01-02",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 88,
+        "thirtyDayAvgMinutes": 88
+      },
+      "light": {
+        "count": 22,
+        "minutes": 214,
+        "thirtyDayAvgMinutes": 201
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 94
+      },
+      "wake": {
+        "count": 29,
+        "minutes": 37,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2022-01-03",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 120,
+        "thirtyDayAvgMinutes": 113
+      },
+      "light": {
+        "count": 20,
+        "minutes": 285,
+        "thirtyDayAvgMinutes": 311
+      },
+      "rem": {
+        "count": 10,
+        "minutes": 85,
+        "thirtyDayAvgMinutes": 87
+      },
+      "wake": {
+        "count": 42,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  },
+  {
+    "date": "2022-01-04",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 139,
+        "thirtyDayAvgMinutes": 139
+      },
+      "light": {
+        "count": 20,
+        "minutes": 192,
+        "thirtyDayAvgMinutes": 180
+      },
+      "rem": {
+        "count": 17,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 78
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2022-01-05",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 92,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 39,
+        "minutes": 268,
+        "thirtyDayAvgMinutes": 270
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 40,
+        "thirtyDayAvgMinutes": 41
+      }
+    }
+  },
+  {
+    "date": "2022-01-06",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 81,
+        "thirtyDayAvgMinutes": 82
+      },
+      "light": {
+        "count": 38,
+        "minutes": 188,
+        "thirtyDayAvgMinutes": 193
+      },
+      "rem": {
+        "count": 11,
+        "minutes": 99,
+        "thirtyDayAvgMinutes": 100
+      },
+      "wake": {
+        "count": 27,
+        "minutes": 29,
+        "thirtyDayAvgMinutes": 27
+      }
+    }
+  },
+  {
+    "date": "2022-01-07",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 65,
+        "thirtyDayAvgMinutes": 59
+      },
+      "light": {
+        "count": 34,
+        "minutes": 184,
+        "thirtyDayAvgMinutes": 172
+      },
+      "rem": {
+        "count": 15,
+        "minutes": 87,
+        "thirtyDayAvgMinutes": 91
+      },
+      "wake": {
+        "count": 30,
+        "minutes": 22,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2022-01-08",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 7,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 31,
+        "minutes": 185,
+        "thirtyDayAvgMinutes": 183
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 92,
+        "thirtyDayAvgMinutes": 89
+      },
+      "wake": {
+        "count": 23,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2022-01-09",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 92,
+        "thirtyDayAvgMinutes": 87
+      },
+      "light": {
+        "count": 37,
+        "minutes": 298,
+        "thirtyDayAvgMinutes": 315
+      },
+      "rem": {
+        "count": 13,
+        "minutes": 96,
+        "thirtyDayAvgMinutes": 93
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 24,
+        "thirtyDayAvgMinutes": 22
+      }
+    }
+  },
+  {
+    "date": "2022-01-10",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 79,
+        "thirtyDayAvgMinutes": 84
+      },
+      "light": {
+        "count": 24,
+        "minutes": 293,
+        "thirtyDayAvgMinutes": 311
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 78,
+        "thirtyDayAvgMinutes": 71
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 33
+      }
+    }
+  },
+  {
+    "date": "2022-01-11",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 8,
+        "minutes": 122,
+        "thirtyDayAvgMinutes": 125
+      },
+      "light": {
+        "count": 17,
+        "minutes": 224,
+        "thirtyDayAvgMinutes": 213
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 91,
+        "thirtyDayAvgMinutes": 96
+      },
+      "wake": {
+        "count": 21,
+        "minutes": 20,
+        "thirtyDayAvgMinutes": 19
+      }
+    }
+  },
+  {
+    "date": "2022-01-12",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 103,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 17,
+        "minutes": 240,
+        "thirtyDayAvgMinutes": 257
+      },
+      "rem": {
+        "count": 18,
+        "minutes": 109,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 34,
+        "minutes": 14,
+        "thirtyDayAvgMinutes": 15
+      }
+    }
+  },
+  {
+    "date": "2022-01-13",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 107,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 35,
+        "minutes": 271,
+        "thirtyDayAvgMinutes": 295
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 68,
+        "thirtyDayAvgMinutes": 71
+      },
+      "wake": {
+        "count": 47,
+        "minutes": 40,
+        "thirtyDayAvgMinutes": 43
+      }
+    }
+  },
+  {
+    "date": "2022-01-14",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 114,
+        "thirtyDayAvgMinutes": 104
+      },
+      "light": {
+        "count": 21,
+        "minutes": 299,
+        "thirtyDayAvgMinutes": 326
+      },
+      "rem": {
+        "count": 20,
+        "minutes": 75,
+        "thirtyDayAvgMinutes": 69
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 10,
+        "thirtyDayAvgMinutes": 9
+      }
+    }
+  },
+  {
+    "date": "2022-01-15",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 106
+      },
+      "light": {
+        "count": 25,
+        "minutes": 188,
+        "thirtyDayAvgMinutes": 193
+      },
+      "rem": {
+        "count": 19,
+        "minutes": 119,
+        "thirtyDayAvgMinutes": 127
+      },
+      "wake": {
+        "count": 39,
+        "minutes": 11,
+        "thirtyDayAvgMinutes": 10
+      }
+    }
+  },
+  {
+    "date": "2022-01-16",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 4,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 90
+      },
+      "light": {
+        "count": 27,
+        "minutes": 265,
+        "thirtyDayAvgMinutes": 259
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 118,
+        "thirtyDayAvgMinutes": 127
+      },
+      "wake": {
+        "count": 28,
+        "minutes": 13,
+        "thirtyDayAvgMinutes": 14
+      }
+    }
+  },
+  {
+    "date": "2022-01-17",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 5,
+        "minutes": 61,
+        "thirtyDayAvgMinutes": 65
+      },
+      "light": {
+        "count": 30,
+        "minutes": 222,
+        "thirtyDayAvgMinutes": 200
+      },
+      "rem": {
+        "count": 14,
+        "minutes": 77,
+        "thirtyDayAvgMinutes": 76
+      },
+      "wake": {
+        "count": 40,
+        "minutes": 16,
+        "thirtyDayAvgMinutes": 17
+      }
+    }
+  },
+  {
+    "date": "2022-01-18",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 86,
+        "thirtyDayAvgMinutes": 83
+      },
+      "light": {
+        "count": 30,
+        "minutes": 254,
+        "thirtyDayAvgMinutes": 237
+      },
+      "rem": {
+        "count": 21,
+        "minutes": 115,
+        "thirtyDayAvgMinutes": 109
+      },
+      "wake": {
+        "count": 31,
+        "minutes": 19,
+        "thirtyDayAvgMinutes": 20
+      }
+    }
+  },
+  {
+    "date": "2022-01-19",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 134,
+        "thirtyDayAvgMinutes": 135
+      },
+      "light": {
+        "count": 33,
+        "minutes": 254,
+        "thirtyDayAvgMinutes": 244
+      },
+      "rem": {
+        "count": 12,
+        "minutes": 98,
+        "thirtyDayAvgMinutes": 96
+      },
+      "wake": {
+        "count": 37,
+        "minutes": 35,
+        "thirtyDayAvgMinutes": 38
+      }
+    }
+  },
+  {
+    "date": "2022-01-20",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 6,
+        "minutes": 67,
+        "thirtyDayAvgMinutes": 63
+      },
+      "light": {
+        "count": 34,
+        "minutes": 290,
+        "thirtyDayAvgMinutes": 296
+      },
+      "rem": {
+        "count": 23,
+        "minutes": 99,
+        "thirtyDayAvgMinutes": 100
+      },
+      "wake": {
+        "count": 24,
+        "minutes": 23,
+        "thirtyDayAvgMinutes": 21
+      }
+    }
+  },
+  {
+    "date": "2022-01-21",
+    "hrv": null,
+    "sleep": {
+      "deep": {
+        "count": 3,
+        "minutes": 93,
+        "thirtyDayAvgMinutes": 98
+      },
+      "light": {
+        "count": 23,
+        "minutes": 225,
+        "thirtyDayAvgMinutes": 235
+      },
+      "rem": {
+        "count": 22,
+        "minutes": 108,
+        "thirtyDayAvgMinutes": 112
+      },
+      "wake": {
+        "count": 34,
+        "minutes": 30,
+        "thirtyDayAvgMinutes": 31
+      }
+    }
+  }
+]
