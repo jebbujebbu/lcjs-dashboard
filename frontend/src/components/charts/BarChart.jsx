@@ -1,4 +1,4 @@
-import { Themes, ColorCSS } from "@lightningchart/lcjs";
+import { Themes } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -23,21 +23,13 @@ export default function BarChart(props) {
     const chart = lc.BarChart({
         theme: Themes.cyberSpace,
         container,
+        legend: {
+          addEntriesAutomatically: false,
+        },
     })
     chart
     .setTitle('')
     .setValueLabels(undefined)
-    // .setBackgroundFillStyle(new SolidFill({ color: ColorRGBA(255, 0, 0) }))
-    // .setSeriesBackgroundFillStyle(new SolidFill({ color: ColorRGBA(0, 255, 0) }))
-    // .setSeriesBackgroundStrokeStyle(new SolidLine({ thickness: 1, fillStyle: new SolidFill({ color: ColorRGBA(0, 0, 255) }) }))
-    // .valueAxis.setTitle('Steps').setUnits('%')
-    // .setDataStacked(
-    //     [''],
-    //     [
-    //         { subCategory: '', values: [0] },
-    //         { subCategory: '', values: [25000] },
-    //     ],
-    // )
     setBarChart(chart);
     return () => {
       // Destroy chart when component lifecycle ends.
@@ -46,7 +38,6 @@ export default function BarChart(props) {
   }, [id, lc]); 
 
   // Update cart data whenever data prop changes
-  // KYSY: miten päivittää ilman, että uusii aina subcategory-titlen?
   useEffect(() => {
     if (!barChart || data === undefined || barChart.isDisposed()) return    
     barChart

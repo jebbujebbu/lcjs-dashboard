@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState, useMemo, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import '../styles/Dashboard.css';
 import MultiChart from '../components/MultiChart.jsx';
 import GaugeChart from '../components/charts/GaugeChart.jsx';
@@ -15,7 +15,7 @@ import calcSleepAverages from '../utils/calcSleepAverages.js';
 import calcWellnessIndex from '../utils/calcWellnessIndex.js';
 import getInitialData from '../utils/getInitialData.js';
 import toChartSpans from '../utils/toChartSpans.js';
-import getStageAtTime from '../utils/getStageAtTime.js';
+// import getStageAtTime from '../utils/getStageAtTime.js';
 
 const Dashboard = () => {
   // console.log('Dashboard render');
@@ -24,18 +24,16 @@ const Dashboard = () => {
   const [hourSeries, setHourSeries] = useState([]);
   const [daySeries, setDaySeries] = useState([]);
   const [sleepSeries, setSleepSeries] = useState([]);
-  const [minuteIndex, setMinuteIndex] = useState(0);
-  const [hourIndex, setHourIndex] = useState(0);
-  const [dayIndex, setDayIndex] = useState(0);
+  // const [minuteIndex, setMinuteIndex] = useState(0);
+  // const [hourIndex, setHourIndex] = useState(0);
+  // const [dayIndex, setDayIndex] = useState(0);
   const [currentSteps, setCurrentSteps] = useState(0);
   const [dailySteps, setDailySteps] = useState(0);
-  const [currentHour, setCurrentHour] = useState(0);
-  const [msg, setMsg] = useState(null);
-
-  const [temperatures, setTemperatures] = useState([]);
-  const [allNights, setAllNights] = useState([]);
+  // const [currentHour, setCurrentHour] = useState(0);
   const [currentStages, setCurrentStages] = useState(null);
   const [avgStages, setAvgStages] = useState(null);
+  const minuteIndexRef = useRef(0);
+  const hourIndexRef = useRef(0);
   
   // Add debugging for avgStages changes
   useEffect(() => {
@@ -43,22 +41,19 @@ const Dashboard = () => {
   }, [avgStages]);
   const [activity, setActivity] = useState(null);
   const [wellness, setWellness] = useState(null);
-  const [timeIndex, setTimeIndex] = useState(0); 
-  const [newPoints, setNewPoints] = useState(null);
   const [currentDataPoint, setCurrentDataPoint] = useState(null);
 
   useEffect(() => { 
     console.log("Fetching data from backend...");
+    const controller = new AbortController();
+
     Promise.all([
-      fetch("/api/data").then(r => r.json()),
-      fetch("/api/sleep-data").then(r => {
-        console.log("Sleep data fetch response status:", r.status);
-        return r.json();
-      })  // sleep dataset
+      fetch("/api/data", { signal: controller.signal }).then(r => r.json()),
+      fetch("/api/sleep-data", { signal: controller.signal }).then((r) => r.json())
     ])
     .then(([data, sleepData]) => {
-      console.log("Fetched data:", data);
-      console.log("Fetched sleepData:", sleepData);
+      if (!data || !sleepData) return;
+
       // Convert temperature deviation values to absolute temperature values
       convertTemperatures(data.hourSeries);
     
@@ -67,21 +62,26 @@ const Dashboard = () => {
       setHourSeries(data.hourSeries || []);
       setDaySeries(data.daySeries || []);
       setSleepSeries(sleepData.daySeries || []);
-      // console.log(`Loaded ${data.minuteSeries?.length} minutes, ${data.hourSeries?.length} hours, ${data.daySeries?.length} days, ${sleepData.daySeries?.length} sleeps`);
       
       // Initialize charts with data from the last 7 days of data set (ending 2022-01-21)
       const initialData = getInitialData(data.minuteSeries, data.hourSeries, data.daySeries, sleepData.daySeries);
-      setCurrentStages(toChartSpans(initialData.currentStages)); // Restore toChartSpans since sleepSeries needs conversion
+      setCurrentStages(toChartSpans(initialData.currentStages));
       setAvgStages(initialData.avgStages);
-      // setActivity(initialData.activity);
       setWellness(initialData.wellness);
-      console.log("Initialized with last 7 days data:", initialData);
-      // console.log("avgStages set to:", initialData.avgStages);
+      console.log("Fetched data:", data);
+      console.log("Fetched sleepData:", sleepData);
     })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-      setMsg("Error: " + error.message);
+    .catch((err) => {
+      if (err.name === "AbortError") {
+        console.log("Fetch aborted");
+      } else {
+        console.error("Error fetching data:", err);
+      }
     });
+
+    return () => {
+      controller.abort();
+    };
   }, []);
 
   useEffect(() => {
@@ -92,13 +92,18 @@ const Dashboard = () => {
 
     const interval = setInterval(() => {
       // Update minute data every cycle
-      setMinuteIndex(prevMinuteIndex => {
-        const nextMinuteIndex = (prevMinuteIndex + 1) % minuteSeries.length;
+      // setMinuteIndex(prevMinuteIndex => {
+      //   const nextMinuteIndex = (prevMinuteIndex + 1) % minuteSeries.length;
+      //   const currentMinuteData = minuteSeries[nextMinuteIndex];
+
+        // if(!currentMinuteData?.timestamp) return nextMinuteIndex;
+        let nextMinuteIndex = (minuteIndexRef.current + 1) % minuteSeries.length;
         const currentMinuteData = minuteSeries[nextMinuteIndex];
 
-        if(!currentMinuteData?.timestamp) return nextMinuteIndex;
-
-        setMsg(currentMinuteData.timestamp);
+        if (!currentMinuteData?.timestamp) {
+          minuteIndexRef.current = nextMinuteIndex;
+          return;
+        }
 
         const currentTime = currentMinuteData.timestamp;
         const date = currentTime.split('T')[0];
@@ -109,9 +114,11 @@ const Dashboard = () => {
         // Check if hour changed, update hourSeries data
         if (minute === 0)  {
           // console.log("New hour");
-          setHourIndex(prevHourIndex => {
-            const nextHourIndex = (prevHourIndex + 1) % hourSeries.length;
-            const currentHourData = hourSeries[nextHourIndex];
+          // setHourIndex(prevHourIndex => {
+          //   const nextHourIndex = (prevHourIndex + 1) % hourSeries.length;
+          //   const currentHourData = hourSeries[nextHourIndex];
+          let nextHourIndex = (hourIndexRef.current + 1) % hourSeries.length;
+          const currentHourData = hourSeries[nextHourIndex];
 
           // Merge minute and hour data
           const combinedData = {
@@ -122,11 +129,12 @@ const Dashboard = () => {
           };
 
           setCurrentDataPoint(combinedData);
-          setCurrentHour(hour);
+          // setCurrentHour(hour);
           // console.log("currentDataPoint (hour update)", combinedData);
 
-          return nextHourIndex;
-          });
+          // return nextHourIndex;
+          // });
+          hourIndexRef.current = nextHourIndex;
         } else {
           // Just update with minute data + accumulated steps
           const updatedData = {
@@ -145,7 +153,7 @@ const Dashboard = () => {
           setDailySteps(0);
 
           // Update MosaicChart with 7-day activity data
-          const last7days = getLast7Days(minuteSeries,  currentTime);  //currentTime "2021-05-24T00:00:00Z"
+          const last7days = getLast7Days(minuteSeries, currentTime);  //currentTime "2021-05-24T00:00:00Z"
           // console.log("last7days: ", last7days);
           
           // Group by day and hour, calculate hourly totals
@@ -174,7 +182,7 @@ const Dashboard = () => {
               
               // Calculate score for each hour
               Object.values(hourlyTotals).forEach(hourData => {
-                const activityPoints = (hourData.calories * 0.1) + (hourData.steps * 0.005);
+                // const activityPoints = (hourData.calories * 0.1) + (hourData.steps * 0.005);
                 const score = calcActivityScore(hourData.calories, hourData.steps);
                 // console.log(`Hour data: calories=${hourData.calories}, steps=${hourData.steps}, points=${activityPoints}, score=${score}`);
                 hourlyScores[score]++;
@@ -204,25 +212,27 @@ const Dashboard = () => {
           console.log("Eight AM 08:00");
 
           // Find last night's sleep data
-          const lastNight = sleepSeries.find(day => day.date === date);
-          console.log("lastnight sleep: ", lastNight.sleep)
+          // console.log("lastNight date: ", date);
+          // console.log("Looking for sleep data on date:", date);
+          const lastNight = daySeries.find(day => day.date === date);
+          // console.log("8 AM lastnight sleep: ", lastNight.sleep)
+          // console.log("Matched lastNight:", lastNight);
 
           if (lastNight?.sleep) {
-            setCurrentStages(toChartSpans(lastNight.sleep.levels))
+            const spans = toChartSpans(lastNight.sleep.levels);
+            // console.log("8 AM update - converted spans:", spans);
+            setCurrentStages(spans);
 
             // Calculate 7-night average
-            const last7Nights = getLast7Days(sleepSeries, currentTime).filter(day => day.sleep)
-            const avgSleep = calcSleepAverages(last7Nights)
-            console.log("8 AM update - avgSleep:", avgSleep);
-            
-            if (avgSleep) {
-              console.log("8 AM update - setting avgStages directly from calcSleepAverages");
-              setAvgStages(avgSleep);
-            } else {
-              console.log("8 AM update - no avgSleep data available");
-            }
+            const last7Nights = getLast7Days(sleepSeries, currentTime);
+            console.log("8 AM update - last7Nights:", last7Nights);
 
-            // console.log("Updated sleep data:", { lastNight: lastNight.sleep, average: avgSleep });
+            const avgSleep = calcSleepAverages(last7Nights);
+            console.log("8 AM update - avgSleep:", avgSleep);
+
+            setAvgStages(avgSleep);
+
+          // console.log("Updated sleep data:", { lastNight: lastNight.sleep, average: avgSleep });
           } else {
             console.log("No sleep data found for", date);
           }
@@ -258,12 +268,13 @@ const Dashboard = () => {
 
         setCurrentSteps(currentMinuteData.steps);
       
-        return nextMinuteIndex;
-      });
+        minuteIndexRef.current = nextMinuteIndex;
+      //   return nextMinuteIndex;
+      // });
     }, 16); // 0.1 second = 1 simulated minute
 
     return () => clearInterval(interval);
-  }, [minuteSeries, hourSeries, daySeries, dailySteps]);
+  }, [minuteSeries, hourSeries, daySeries, sleepSeries, dailySteps]);
 
   if (minuteSeries.length === 0) {
     console.log("Loading data, minuteSeries.length:", minuteSeries.length);
@@ -276,7 +287,7 @@ const Dashboard = () => {
       {currentDataPoint && (
       <> 
         <div className="card" id="multi">
-          <MultiChart data={currentDataPoint} steps={currentSteps} />
+          <MultiChart data={currentDataPoint} steps={currentSteps} titles={["Heart Rate", "Steps/Min", "Kcal/Min"]}/>
       </div>
         <div className="card" id="stress">
           <div className="gauge">
@@ -313,12 +324,12 @@ const Dashboard = () => {
       <>
         <div className="card" id="laststages">
           <div className="span">
-            <SpanChart data={currentStages} title="Sleep Stages (Last Night)"/>
+            <SpanChart data={currentStages}/>
           </div> 
         </div>
         <div className="card" id="index">
           <div className="spider">
-            <SpiderChart data={wellness} title="Wellness Index"/>
+            <SpiderChart data={wellness}/>
           </div> 
         </div>
         <div className="card" id="activity">

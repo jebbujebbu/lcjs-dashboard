@@ -1,11 +1,10 @@
-import { SolidFill, ColorRGBA, emptyLine, emptyFill, AxisTickStrategies, UIOrigins, UIElementBuilders, UILayoutBuilders, UIDraggingModes, Themes } from "@lightningchart/lcjs";
+import { SolidFill, ColorRGBA, AxisTickStrategies, Themes } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
 export default function SpanChart(props) {
   const data = props.data;
-  const title = props.title;
-//   console.log(`SpanChart ${title} data`, data);
+  // console.log(`SpanChart data`, data);
   const id = useId();
   const lc = useContext(LCContext);
   const [chart, setChart] = useState(undefined);
@@ -23,17 +22,17 @@ export default function SpanChart(props) {
 
     // Define an interface for creating span charts
     let spanChart
-    let actualChart // Store the actual chart instance for cleanup
+    // Store the actual chart instance for cleanup
+    let actualChart 
     // User side SpanChart logic
-    {
-      spanChart = () => {
+    spanChart = () => {
         // Create a XY-Chart and add a RectSeries to it for rendering rectangles
         const chart = lc.ChartXY({
                 legend: { visible: false },
                 theme: Themes.cyberSpace,
                 container,
             })
-            chart.setTitle(title)
+            chart.setTitle('Sleep Stages (Last Night)')
             .setUserInteractions(undefined)
             .setCursorMode(undefined)
 
@@ -47,7 +46,6 @@ export default function SpanChart(props) {
 
         const axisY = chart
             .getDefaultAxisY()
-            // .setTitle('Conference Room')
             // Hide default ticks, instead rely on CustomTicks
             .setTickStrategy(AxisTickStrategies.Empty)
 
@@ -105,12 +103,13 @@ export default function SpanChart(props) {
                 //             .setTextFillStyle(new SolidFill().setColor(ColorRGBA(255, 255, 255))),
                 //     ),
                 // )
-                if (index != i) {
+                if (index !== i) {
                     customYRange = customYRange + figureHeight + 1
                 }
                 fitAxes()
                 // Return figure
-                return chart.addRectangleSeries().add(rectDimensions).setCornerRadius(10)
+                const rectSeries = chart.addRectangleSeries().add(rectDimensions).setCornerRadius(10)
+                return rectSeries
             }
 
             // Add custom tick for category
@@ -133,13 +132,13 @@ export default function SpanChart(props) {
             addCategory,
         }
       }
-    }
 
     // Use the interface for example
     let chart = spanChart()
     const categories = ['Light', 'Deep', 'REM'].map((name) => chart.addCategory(name))
     chart.categories = categories
     chart.stageMap = {}
+    chart.rectangleSeries = [] // Track rectangle series for clearing
     stages.forEach((stage, i) => {
     chart.stageMap[stage] = i   // e.g. { light:0, deep:1, rem:2 }
     })
@@ -166,12 +165,22 @@ export default function SpanChart(props) {
   // Update data whenever data prop changes
   useEffect(() => {
     if (!chart || !data) return
-    console.log(`SpanChart ${title} update, data: `, data);
-    if (title == "Sleep Stages (7 Nights)") {
-        // chart.
-    } 
-    else {
-         data.forEach((entry) => {
+    
+    console.log(`SpanChart update, data: `, data);
+
+    // Clear previous rectangle series
+    if (chart.rectangleSeries) {
+      chart.rectangleSeries.forEach(series => {
+        try {
+          series.dispose();
+        } catch (e) {
+          // Series might already be disposed
+        }
+      });
+      chart.rectangleSeries = [];
+    }
+
+    data.forEach((entry) => {
       const { stage, spans } = entry
       if (stage === "wake") return // skip wake in chart
 
@@ -183,10 +192,10 @@ export default function SpanChart(props) {
       }
 
       spans.forEach(span => {
-        chart.categories[idx].addSpan(idx, span[0], span[1])
+        const rectSeries = chart.categories[idx].addSpan(idx, span[0], span[1])
+        chart.rectangleSeries.push(rectSeries)
       })
     })
-  }
   }, [chart, data]);
 
   return <div id={id} style={{ width: "100%", height: "100%" }}></div>;

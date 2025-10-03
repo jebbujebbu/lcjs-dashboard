@@ -10,7 +10,7 @@ function App() {
     // This let's them share the same LC context for performance benefits.
     <LCHost>
       <div className="App">
-          <Dashboard />
+      <Dashboard />
       </div>
     </LCHost>
   );

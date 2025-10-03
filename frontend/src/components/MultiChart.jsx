@@ -6,7 +6,6 @@ export default function MultiChart(props) {
   const heartRate = props.data.heart_rate;
   const steps = props.steps;
   const calories = props.data.calories;
-  const titles = ["Heart Rate", "Steps/Min", "Kcal/Min"];
 
   const id = useId();
   const lc = useContext(LCContext);
@@ -16,6 +15,8 @@ export default function MultiChart(props) {
   useEffect(() => {
     const container = document.getElementById(id);
     if (!container || !lc) return;
+
+    const titles = ["Heart Rate", "Steps/Min", "Kcal/Min"];
 
     // Make container a flexbox row
     container.style.display = "flex";
@@ -88,7 +89,7 @@ export default function MultiChart(props) {
         .setTickFormatter((tick) => tick.toFixed(0))
         .setValueLabelFont((font) => font.setSize(24))
         .setUnitLabelFont((font) => font.setSize(16))
-        .setTickFont((font) => font.setSize(16));
+        .setTickFont((font) => font.setSize(16))
 
       gaugeChartArray.push(gauge);
     }
@@ -112,6 +113,8 @@ export default function MultiChart(props) {
     return () => {
       xyChart.dispose();
       gaugeChartArray.forEach((gauge) => gauge.dispose());
+      gaugeLayout.remove();
+      xyContainer.remove();
     };
   }, [id, lc]);
 

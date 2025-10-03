@@ -70,17 +70,17 @@ export default function GaugeChart(props) {
       .setInterval(34.5, 39)
       .setValueIndicators([
         { start: 34.5, end: 36.0, color: ColorHEX(("#5262b0ff")), startLabel: '', endLabel: ''  },
-        { start: 36.0, end: 37.5, color: ColorHEX(("#52b09dff")), startLabel: '', endLabel: '' },
-        { start: 37.5, end: 39, color: ColorHEX(("#932f2fff")), startLabel: '', endLabel: '' },
+        { start: 36.0, end: 37.5, color: ColorHEX(("#5ec69cff")), startLabel: '', endLabel: '' },
+        { start: 37.5, end: 39, color: ColorHEX(("#973849ff")), startLabel: '', endLabel: '' },
       ]);
     }
     if(title === "Stress Level") {
       gauge
       .setInterval(0, 100)
       .setValueIndicators([
-          { start: 0, end: 33, color: ColorHEX(("#52b09dff")), startLabel: '', endLabel: ''  },
+          { start: 0, end: 33, color: ColorHEX(("#5ec69cff")), startLabel: '', endLabel: ''  },
           { start: 33, end: 66, color: ColorHEX(("#8752b0ff")), startLabel: '', endLabel: '' },
-          { start: 66, end: 100, color: ColorHEX(("#932f2fff")), startLabel: '', endLabel: '' },
+          { start: 66, end: 100, color: ColorHEX(("#973849ff")), startLabel: '', endLabel: '' },
       ])
     }
     gauge.setValue(data)

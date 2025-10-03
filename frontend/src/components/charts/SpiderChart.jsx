@@ -1,6 +1,8 @@
-import { Themes, ColorHEX, ColorRGBA, SolidFill } from "@lightningchart/lcjs";
+import { Themes } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
+
+const categories = ['Sleep Quality', 'Heart Rate', 'Stress Level', 'Activity']; 
 
 export default function SpiderChart(props) {
   const data = props.data;
@@ -8,7 +10,6 @@ export default function SpiderChart(props) {
   const id = useId();
   const lc = useContext(LCContext);
   const [chart, setChart] = useState(undefined);
-  const categories = ['Sleep Quality', 'Heart Rate', 'Stress Level', 'Activity']
 
   // Create chart just once during lifecycle of component.
   useEffect(() => {

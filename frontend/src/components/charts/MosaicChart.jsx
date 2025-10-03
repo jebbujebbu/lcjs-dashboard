@@ -1,4 +1,4 @@
-import { SolidFill, ColorHEX, ColorRGBA, emptyLine, emptyFill, UIElementBuilders, UIBackgrounds, UIOrigins, AxisTickStrategies, Themes } from "@lightningchart/lcjs";
+import { SolidFill, ColorHEX, ColorRGBA, emptyLine, emptyFill, UIElementBuilders, UIOrigins, AxisTickStrategies, Themes } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -20,7 +20,8 @@ export default function MosaicChart(props) {
 
     // Define an interface for creating mosaic charts.
     let mosaicChart
-    let chartInstance // Store the actual chart instance
+    // Store the actual chart instance
+    let chartInstance 
     // User side MosaicChart logic.
     mosaicChart = () => {
         // Create a XY-Chart and add a RectSeries to it for rendering rectangles.
@@ -33,8 +34,9 @@ export default function MosaicChart(props) {
             .setTitle('Weekly Activity')
             .setUserInteractions(undefined)
             .setCursorMode(undefined)
-        
-        chartInstance = chart // Store the chart instance
+
+        // Store the chart instance
+        chartInstance = chart 
         const rectangles = chart.addRectangleSeries()
 
         const bottomAxis = chart
@@ -170,7 +172,7 @@ export default function MosaicChart(props) {
                     return this
                 },
                 setSubCategoryValue(subCategory, value) {
-                    const existing = this.subCategories.find((a) => a.subCategory == subCategory)
+                    const existing = this.subCategories.find((a) => a.subCategory === subCategory)
                     if (existing !== undefined) {
                         existing.value = value
                     } else {
@@ -229,7 +231,7 @@ export default function MosaicChart(props) {
         }
     }
 
-    // Create the mosaic chart interface
+    // Create the mosaic chart interface  
     const mosaicChartInterface = mosaicChart()
 
     mosaicChartInterface.addYCategory('High', 80)
@@ -237,9 +239,9 @@ export default function MosaicChart(props) {
     mosaicChartInterface.addYCategory('Low', 20)
 
     // Create subcategories for activity levels
-    const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#d2a25fff")))
-    const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#e168e5ff")))
-    const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8386dfff")))
+    const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8386dfff")))
+    const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#b65fb9ff")))
+    const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#d2955fff")))
 
     setChart({
       interface: mosaicChartInterface,
