@@ -53,7 +53,7 @@ export default function SpanChart(props) {
         let y = 0
         for (let i = 20; i <= 32; i++) { // Example: show 20h (8 PM) → 32h (8 AM next day)
             const hour = i % 24
-            const label = hour.toString().padStart(2, '0') + ":00"
+            const label = hour.toString().padStart(2, '0') // + ":00"
             axisX
                 .addCustomTick()
                 .setValue(i)
