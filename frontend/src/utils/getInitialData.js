@@ -1,6 +1,7 @@
 import calcSleepAverages from './calcSleepAverages.js';
 import calcWellnessIndex from './calcWellnessIndex.js';
 
+// Helper function to get initial data for dashboard display
 export default function getInitialData(minuteSeries, hourSeries, daySeries, sleepSeries) {
   const lastDate = "2022-01-21";
 
@@ -18,7 +19,6 @@ export default function getInitialData(minuteSeries, hourSeries, daySeries, slee
   });
 
   const avgStages = calcSleepAverages(last7Nights);
-  console.log("getInitialData: avgStages:", avgStages);
 
   // Wellness index
   const lastDayMinuteData = minuteSeries.filter(record =>

@@ -1,4 +1,4 @@
-import { PieChartTypes, SliceLabelFormatters, Themes } from "@lightningchart/lcjs";
+import { PieChartTypes, SliceLabelFormatters, Themes, SolidFill, ColorHEX } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -24,7 +24,8 @@ export default function PieChart({ data, title }) {
 
     pie.setTitle(title || "Sleep Stages")
       .setMultipleSliceExplosion(true)
-      .setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue);
+      .setLabelFormatter(SliceLabelFormatters.NamePlusRelativeValue)
+      .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
 
     setChart(pie);
 
@@ -36,8 +37,6 @@ export default function PieChart({ data, title }) {
 
   useEffect(() => {
     if (!chart || chart.isDisposed() || !Array.isArray(data)) return;
-
-    console.log(`PieChart ${title} update, data:`, data);
 
     const slices = chart.getSlices();
 

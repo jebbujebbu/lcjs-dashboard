@@ -1,3 +1,4 @@
+// Helper function to convert raw temperature deviations to realistic body temperatures
 export default function convertTemperatures(hour_series) { 
   // In data: "temperature": -1.74 
   const normalBodyTemp = 36.8; // Normal core body temperature

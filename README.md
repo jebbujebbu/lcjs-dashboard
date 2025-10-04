@@ -26,28 +26,55 @@ The Wellness Dashboard is a comprehensive health monitoring application that dis
 
 ## How to Use
 
-- Make sure that relevant version of Node.js is installed.
+- Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed (Node 16+ recommended).
 
-- Create an `.env` file to `/frontend` folder and add your license key there. You can see the format in `/frontend/.env.example`.
+- Install http-server globally for LightningChart theme resources:
+```bash
+npm install --global http-server
+```
+
+- Create an `.env` file in the `/frontend` folder and add your license key there. You can see the format in `/frontend/.env.example`:
+```
+REACT_APP_LCJS_LICENSE=your_license_key_here
+```
 
 - Install dependencies in terminal, in project root:
-```
+```bash
 npm install
-npm i @lightningchart/lcjs
 ```
 
-- Build the application and start the development server:
-```
+- Start the development servers (backend, frontend, and LightningChart resources):
+```bash
 npm start
 ```
 
-- The application is available at http://localhost:3000 in your browser.
+- The application will be available at:
+  - Frontend: http://localhost:3000
+  - Backend API: http://localhost:5000
+  - LightningChart Resources: http://localhost:8080
+
+### Alternative Start Commands:
+```bash
+# Start only backend and frontend (without CyberSpace theme)
+npm run start:dev
+
+# Start individual servers
+npm run backend    # Backend only
+npm run frontend   # Frontend only
+npm run lcjs-server # LightningChart resources only
+```
 
 ### Project Structure:
 - `/backend` - Node.js server providing simulated health data APIs
 - `/frontend` - React application with LightningChart JS visualizations
 - `/frontend/src/components/charts/` - Individual chart components
 - `/frontend/src/utils/` - Data processing and calculation utilities
+
+### Dependencies:
+- **Core**: React 18+, Node.js 16+
+- **Visualization**: @lightningchart/lcjs
+- **Development**: concurrently, http-server
+- **Backend**: Express.js, CORS
 
 ## Links
 
@@ -57,5 +84,11 @@ npm start
 - [LightningChart JS Examples](https://lightningchart.com/js-charts/interactive-examples/)
 
 ## About the Creator
+I'm an IT Engineering student passionate about software development, web technologies, and building practical projects.
 
+This project is part of my portfolio, demonstrating skills in React, responsive design, and third-party API integration.
+
+Feel free to connect or provide feedback!
+
+*Created by Jenni Mikkonen*
 

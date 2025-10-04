@@ -1,8 +1,147 @@
+/* Dashboard-container */
+.dashboard-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #060316;
+  overflow: hidden;
+}
+
+/* Speed Control Panel */
+.speed-control-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(6, 3, 22, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: var(--toolbar-h);
+  box-sizing: border-box;
+}
+
+.speed-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.speed-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timestamp-display {
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 255, 136, 0.1);
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  width: 180px;
+  text-align: center;
+}
+
+.speed-controls label {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.speed-slider {
+  width: 150px;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.speed-slider:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.speed-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ff88, #00cc6a);
+  cursor: pointer;
+  border: 2px solid #060316;
+  box-shadow: 0 2px 6px rgba(0, 255, 136, 0.3);
+  transition: all 0.2s ease;
+}
+
+.speed-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 10px rgba(0, 255, 136, 0.5);
+}
+
+.speed-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ff88, #00cc6a);
+  cursor: pointer;
+  border: 2px solid #060316;
+  box-shadow: 0 2px 6px rgba(0, 255, 136, 0.3);
+  transition: all 0.2s ease;
+}
+
+.speed-slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 10px rgba(0, 255, 136, 0.5);
+}
+
+.pause-button {
+  padding: 6px 16px;
+  background: linear-gradient(135deg, #ff0080, #cc0066);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(255, 0, 128, 0.3);
+  white-space: nowrap;
+}
+
+.pause-button:hover {
+  background: linear-gradient(135deg, #ff1a8c, #d9007a);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 0, 128, 0.4);
+}
+
+.pause-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(255, 0, 128, 0.3);
+}
+
 /* Grid container */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr 1fr; /* Changed from 'auto auto auto' for better stretching */
+  grid-template-rows: 1fr 1fr 1fr; 
   grid-template-areas: 
     "multi multi multi stress steps"
     "multi multi multi status steps"
@@ -10,23 +149,21 @@
   justify-items: stretch;
   align-items: stretch;
   gap: 0;
-  background: #000000;
+  background: #060316;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; /* Prevent scrollbars */
+  width: 100%;
+  height: calc(100vh - var(--toolbar-h));
+  margin-top: var(--toolbar-h);
+  overflow: hidden;
   box-sizing: border-box;
-  margin: 0;
 }
 
 /* General styles for cards */
 .card {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   width: 100%;
   height: 100%;
-  min-height: 300px;
-  min-width: 0; /* Prevent overflow */
   box-sizing: border-box;
+  overflow: hidden; 
 }
 
 /* Individual chart card styles */
@@ -75,59 +212,26 @@
   grid-area: activity;
 }
 
-.chart {
-  width: 100%;
-  min-height: 150px;
-}
-
-.gauge {
-  width: 100%;
-  height: 300px;
-  max-width: 400px;
-  max-height: 400px;
-  display: block;
-  aspect-ratio: 1;
-}
-
-.bar {
+.chart, .gauge, .bar, .pie, .span, .spider, .mosaic {
   width: 100%;
   height: 100%;
 }
 
-.pie {
-  width: 100%;
-  height: 100%;
-}
-
-.span {
-  width: 100%;
-  height: 100%;
-}
-
-.spider {
-  width: 100%;
-  height: 100%;
-}
-
-.mosaic {
-  width: 100%;
-  height: 100%;
-}
-
-/* Responsive sizes */
-@media (max-width: 1200px) {
-  .dashboard-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2fr 1fr 1fr; 
-    grid-template-areas: 
-      "multi multi multi stress"
-      "multi multi multi status"
-      "steps avgstages laststages index"
-      "activity activity activity activity";
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .speed-controls {
+    gap: 15px;
   }
-}
-
-@media (max-width: 900px) {
+  
+  .timestamp-display {
+    font-size: 15px;
+    width: 170px;
+  }
+  
+  .speed-slider {
+    width: 130px;
+  }
+  
   .dashboard-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr 1fr 1fr; 
@@ -138,29 +242,55 @@
       "avgstages laststages index"
       "activity activity activity";
   }
-  
-  .card {
-    min-height: 200px; 
+}
+
+/* Mobile tablet breakpoint */
+@media (max-width: 768px) {
+  .speed-controls {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 15px;
   }
   
-  .chart {
-    height: 180px;
-    min-height: 120px;
+  .speed-section {
+    gap: 10px;
   }
   
-  .gauge {
-    height: 250px;
-    max-width: 300px;
-    max-height: 300px;
+  .timestamp-display {
+    font-size: 14px;
+    width: 160px;
+  }
+  
+  .speed-slider {
+    width: 120px;
   }
 }
 
+/* Mobile breakpoint */
 @media (max-width: 600px) {
+  .speed-controls {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  
+  .timestamp-display {
+    font-size: 12px;
+    width: 140px;
+  }
+  
+  .speed-controls label {
+    font-size: 11px;
+  }
+  
+  .pause-button {
+    padding: 4px 12px;
+    font-size: 11px;
+  }
+
   .dashboard-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: 23fr repeat(7, 12r);
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; 
     grid-template-areas: 
-      "multi"
       "multi"
       "stress"
       "status" 
@@ -169,21 +299,25 @@
       "laststages"
       "index"
       "activity";
-    overflow-y: auto; /* Allow scrolling */
+    overflow-y: auto;
     overflow-x: hidden;
   }
   
   .card {
-    min-height: 120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
-  .chart {
-    height: 150px;
-    min-height: 100px;
+  .chart, .gauge, .bar, .pie, .span, .spider, .mosaic {
+    height: 100%;
+    width: 100%;
+    flex: 1; 
   }
-  .gauge {
-    height: 200px;
-    max-width: 100%;
-    max-height: 250px;
+
+  #multi .chart {
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
   }
 }

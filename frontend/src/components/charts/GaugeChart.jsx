@@ -1,15 +1,10 @@
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
-import { ColorCSS, ColorHEX, Themes } from "@lightningchart/lcjs";
+import { ColorHEX, Themes, SolidFill } from "@lightningchart/lcjs";
 
 export default function GaugeChart(props) {
   const { data } = props.data;
-  // const data = props.data;
-  const number = props.number;
   const title = props.title;
-  // console.log('GaugeChart data', data);
-  // console.log('GaugeChart title', title);
-  // console.log('GaugeChart number', number);
   const id = useId();
   const lc = useContext(LCContext);
   const [gauge, setGauge] = useState(undefined);
@@ -36,6 +31,7 @@ export default function GaugeChart(props) {
         return `${value}`
       })
       .setGlowColor(undefined)
+      .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
 
       // Scale the gauge automatically based on screen size
       gauge.addEventListener('resize', (event) => {
@@ -71,7 +67,7 @@ export default function GaugeChart(props) {
       .setValueIndicators([
         { start: 34.5, end: 36.0, color: ColorHEX(("#5262b0ff")), startLabel: '', endLabel: ''  },
         { start: 36.0, end: 37.5, color: ColorHEX(("#5ec69cff")), startLabel: '', endLabel: '' },
-        { start: 37.5, end: 39, color: ColorHEX(("#973849ff")), startLabel: '', endLabel: '' },
+        { start: 37.5, end: 39, color: ColorHEX(("#973869ff")), startLabel: '', endLabel: '' },
       ]);
     }
     if(title === "Stress Level") {
@@ -80,10 +76,10 @@ export default function GaugeChart(props) {
       .setValueIndicators([
           { start: 0, end: 33, color: ColorHEX(("#5ec69cff")), startLabel: '', endLabel: ''  },
           { start: 33, end: 66, color: ColorHEX(("#8752b0ff")), startLabel: '', endLabel: '' },
-          { start: 66, end: 100, color: ColorHEX(("#973849ff")), startLabel: '', endLabel: '' },
+          { start: 66, end: 100, color: ColorHEX(("#973869ff")), startLabel: '', endLabel: '' },
       ])
     }
-    gauge.setValue(data)
+    gauge.setValue(data);
   }, [gauge, data, title]);
 
   // Whenever props.title changes, it is reapplied to existing chart without recreating it

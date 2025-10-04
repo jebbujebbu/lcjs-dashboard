@@ -4,7 +4,6 @@ import { LCContext } from "../../LC";
 
 export default function MosaicChart(props) {
   const data = props.data;
-//   console.log('MosaicChart data', data);
   const id = useId();
   const lc = useContext(LCContext);
   const [chart, setChart] = useState(undefined);
@@ -34,6 +33,7 @@ export default function MosaicChart(props) {
             .setTitle('Weekly Activity')
             .setUserInteractions(undefined)
             .setCursorMode(undefined)
+            .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
 
         // Store the chart instance
         chartInstance = chart 
@@ -239,9 +239,9 @@ export default function MosaicChart(props) {
     mosaicChartInterface.addYCategory('Low', 20)
 
     // Create subcategories for activity levels
-    const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8386dfff")))
-    const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#b65fb9ff")))
-    const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#d2955fff")))
+    const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
+    const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
+    const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
 
     setChart({
       interface: mosaicChartInterface,
@@ -262,8 +262,6 @@ export default function MosaicChart(props) {
   useEffect(() => {
     if (!chart || !data) return
     
-    // console.log("Mosaic chart updating with data:", data);
-    
     // Use existing chart interface and subcategories
     const { interface: mosaicChart, subcategories } = chart;
     
@@ -272,8 +270,6 @@ export default function MosaicChart(props) {
     
     // Add categories for each day and set their values
     for (let i = 0; i < data.length; i++) {
-    //   console.log(`Adding Day ${i} data:`, data[i]);
-      
       mosaicChart
         .addCategory(data[i].date)
         .setCategoryValue(100 / data.length)

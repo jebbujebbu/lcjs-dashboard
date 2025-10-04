@@ -1,12 +1,10 @@
-import { Themes } from "@lightningchart/lcjs";
+import { Themes, ColorHEX, SolidFill } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
 export default function BarChart(props) {
   const { data } = props.data;
   const barTitle = props.title;
-  // console.log('BarChart data', data);
-  // console.log('BarChart barTitle', barTitle);
   const id = useId();  
   const lc = useContext(LCContext);
   const [barChart, setBarChart] = useState(undefined);
@@ -30,6 +28,7 @@ export default function BarChart(props) {
     chart
     .setTitle('')
     .setValueLabels(undefined)
+    .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
     setBarChart(chart);
     return () => {
       // Destroy chart when component lifecycle ends.

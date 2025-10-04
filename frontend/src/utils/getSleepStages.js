@@ -1,3 +1,4 @@
+// Helper function to get the most recent complete sleep stages for a user
 export default function getSleepStages(allData, currentTimestamp, userId) {
   // Only keep sleep entries
   const sleeps = allData.filter(

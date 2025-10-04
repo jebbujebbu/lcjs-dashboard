@@ -1,7 +1,5 @@
-// utils/toChartSpans.js
+// Helper function to convert sleep levels into chart spans for visualization
 export default function toChartSpans(levels) {
-  console.log(`toChartSpans, props: ${levels}`);
-
   if (!Array.isArray(levels) || levels.length === 0) {
     return []   // nothing to render
   }
@@ -22,18 +20,18 @@ export default function toChartSpans(levels) {
     const end = parseTimeToHourFraction(l.end, refDate);
 
     if (l.stage === "wake") {
-      // bridge: extend previous stage to cover the gap, if any
+      // Extend previous stage to cover the gap, if any
       if (currentSpan) {
-        currentSpan[1] = end; // stretch end to after wake
+        currentSpan[1] = end; // Stretch end to after wake
       }
       return;
     }
 
     if (l.stage === prevStage && currentSpan) {
-      // same stage continues -> merge into previous span
+      // Same stage continues -> merge into previous span
       currentSpan[1] = end;
     } else {
-      // push new span
+      // Push new span
       currentSpan = [start, end];
       grouped[l.stage].push(currentSpan);
     }
@@ -57,7 +55,7 @@ function parseTimeToHourFraction(timeStr, referenceDate) {
 
   // Align to chart axis: keep values in [20, 32]
   if (hours < 20) {
-    hours += 24; // e.g. 00:30 → 24.5
+    hours += 24; // E.g. 00:30 → 24.5
   }
 
   return hours;

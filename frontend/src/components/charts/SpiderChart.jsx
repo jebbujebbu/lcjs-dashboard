@@ -1,4 +1,4 @@
-import { Themes } from "@lightningchart/lcjs";
+import { Themes, SolidFill, ColorHEX } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -6,7 +6,6 @@ const categories = ['Sleep Quality', 'Heart Rate', 'Stress Level', 'Activity'];
 
 export default function SpiderChart(props) {
   const data = props.data;
-  // console.log('SpiderChart data', data);
   const id = useId();
   const lc = useContext(LCContext);
   const [chart, setChart] = useState(undefined);
@@ -30,8 +29,8 @@ export default function SpiderChart(props) {
     .setAxisInterval(100)
     .setAxisInterval(100)
     .setScaleLabelStrategy(undefined)
-    // .setBackgroundFillStyle(new SolidFill({ color: ColorHEX("#db94c6") }))
-    // .setSeriesBackgroundFillStyle(new SolidFill({ color: ColorHEX("#db94c6") }))
+    .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }))
+    .setSeriesBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }))
 
     const series = [chart.addSeries().setName('Average'), chart.addSeries().setName('Me')]
     series.forEach((value, i) => {
@@ -57,7 +56,6 @@ export default function SpiderChart(props) {
   // Update series data whenever data prop changes.
   useEffect(() => {
     if (!chart || !data || chart.chart.isDisposed()) return
-    // console.log("SpiderChart update, data: ", data)
     
     const newPoints = [
         { axis: categories[0], value: data.sleepQuality || 0 },

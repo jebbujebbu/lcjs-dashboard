@@ -1,4 +1,4 @@
-import { SolidFill, ColorRGBA, AxisTickStrategies, Themes } from "@lightningchart/lcjs";
+import { SolidFill, ColorRGBA, AxisTickStrategies, Themes, ColorHEX } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -35,6 +35,7 @@ export default function SpanChart(props) {
             chart.setTitle('Sleep Stages (Last Night)')
             .setUserInteractions(undefined)
             .setCursorMode(undefined)
+            .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
 
         // Store the actual chart instance
         actualChart = chart
@@ -84,25 +85,6 @@ export default function SpanChart(props) {
                     width: max - min,
                     height: figureHeight,
                 }
-                // Add element for span labels
-                // const spanText = chart
-                //     .addUIElement(UILayoutBuilders.Row, { x: axisX, y: axisY })
-                //     .setOrigin(UIOrigins.Center)
-                //     .setDraggingMode(UIDraggingModes.notDraggable)
-                //     .setPosition({
-                //         x: (min + max) / 2,
-                //         y: rectDimensions.y + 5,
-                //     })
-                //     .setBackground((background) => background.setFillStyle(emptyFill).setStrokeStyle(emptyLine))
-
-                // spanText.addElement(
-                //     UIElementBuilders.TextBox.addStyler((textBox) =>
-                //         textBox
-                //             .setTextFont((fontSettings) => fontSettings.setSize(13))
-                //             .setText(label)
-                //             .setTextFillStyle(new SolidFill().setColor(ColorRGBA(255, 255, 255))),
-                //     ),
-                // )
                 if (index !== i) {
                     customYRange = customYRange + figureHeight + 1
                 }
@@ -142,16 +124,17 @@ export default function SpanChart(props) {
     stages.forEach((stage, i) => {
     chart.stageMap[stage] = i   // e.g. { light:0, deep:1, rem:2 }
     })
+    
     const spans = []
 
     let index = 0
     spans.forEach((values, i) => {
         values.forEach((value, j) => {
             categories[i].addSpan(i, value[0], value[1])
-            // index = index + 1
+            index = index + 1
         })
     })
-
+    
     setChart(chart);
 
     return () => {
@@ -165,8 +148,6 @@ export default function SpanChart(props) {
   // Update data whenever data prop changes
   useEffect(() => {
     if (!chart || !data) return
-    
-    console.log(`SpanChart update, data: `, data);
 
     // Clear previous rectangle series
     if (chart.rectangleSeries) {

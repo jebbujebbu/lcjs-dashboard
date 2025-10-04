@@ -1,11 +1,8 @@
+// Helper function to calculate average sleep stages from array of sleep data
 export default function calcSleepAverages(sleepArray) {
-  console.log("calcSleepAverages called with sleepArray.length:", sleepArray.length)
   if (sleepArray.length === 0) {
-    console.log("calcSleepAverages: No sleep data, returning []")
     return []
   }
-
-  console.log("calcSleepAverages: sleepArray[0]:", sleepArray[0])
 
   // Sum minutes
   const totals = sleepArray.reduce(

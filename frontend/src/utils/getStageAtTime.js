@@ -1,3 +1,4 @@
+// Helper function to get sleep stage at a specific time
 export default function getStageAtTime(levels, timeStr) {
   const t = new Date(timeStr).getTime()
   const entry = levels.find(l => {

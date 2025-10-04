@@ -1,6 +1,8 @@
-import { Themes, AxisScrollStrategies, AxisTickStrategies, emptyLine } from "@lightningchart/lcjs";
+import { Themes, AxisScrollStrategies, AxisTickStrategies, emptyLine, SolidFill, ColorHEX } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../LC";
+
+const titles = ["Heart Rate", "Steps/Min", "Kcal/Min"];
 
 export default function MultiChart(props) {
   const heartRate = props.data.heart_rate;
@@ -16,8 +18,6 @@ export default function MultiChart(props) {
     const container = document.getElementById(id);
     if (!container || !lc) return;
 
-    const titles = ["Heart Rate", "Steps/Min", "Kcal/Min"];
-
     // Make container a flexbox row
     container.style.display = "flex";
     container.style.flexDirection = "row";
@@ -30,12 +30,13 @@ export default function MultiChart(props) {
     container.append(gaugeLayout);
     gaugeLayout.style.flex = "0 0 25%";  
     gaugeLayout.style.height = "100%";
-
+    
     // XY container
     const xyContainer = document.createElement("div");
     container.append(xyContainer);
     xyContainer.style.flex = "1";         
     xyContainer.style.height = "100%";
+    xyContainer.style.background = "transparent";
 
     const gaugeChartArray = [];
     const lineSeriesArray = [];
@@ -47,7 +48,8 @@ export default function MultiChart(props) {
       legend: { visible: false },
     })
       .setTitle("")
-      .setCursor((cursor) => cursor.setTickMarkerXVisible(false));
+      .setCursor((cursor) => cursor.setTickMarkerXVisible(false))
+    .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
 
     xyChart
       .getDefaultAxisX()
@@ -55,7 +57,7 @@ export default function MultiChart(props) {
       .setThickness(0)
       .setStrokeStyle(emptyLine)
       .setScrollStrategy(AxisScrollStrategies.scrolling)
-      .setInterval({ start: 0, end: 10_000, stopAxisAfter: false });
+      .setInterval({ start: 0, end: 10_000, stopAxisAfter: false })
 
     xyChart.getDefaultAxisY().dispose();
 
@@ -66,6 +68,7 @@ export default function MultiChart(props) {
         .setMargins(5, 5)
         .setInterval({ start: 0, end: 100 });
       const lineSeries = xyChart.addLineSeries({ axisY }).setMaxSampleCount(10_000);
+      lineSeries.setName(titles[iCh]);
       lineSeriesArray.push(lineSeries);
 
       const gaugeContainer = document.createElement("div");
@@ -90,6 +93,7 @@ export default function MultiChart(props) {
         .setValueLabelFont((font) => font.setSize(24))
         .setUnitLabelFont((font) => font.setSize(16))
         .setTickFont((font) => font.setSize(16))
+        .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }))
 
       gaugeChartArray.push(gauge);
     }

@@ -22,7 +22,8 @@
   "scripts": {
     "backend": "npm start -w backend",
     "frontend": "npm start -w frontend",
-    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "lcjs-server": "cd node_modules/@lightningchart/lcjs/dist/resources && npx http-server --cors -p 8080 --silent",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run lcjs-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

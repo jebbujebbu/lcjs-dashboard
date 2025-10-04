@@ -26,6 +26,7 @@ export function LCHost(props) {
           sharedContextOptions: {
             useIndividualCanvas: true,
           },
+          resourcesBaseUrl: 'http://127.0.0.1:8080',
         });
         setLcState(lcRef.current);
       } catch (e) {
