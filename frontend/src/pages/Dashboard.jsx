@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect, useState, useRef } from 'react';
+import { React, useEffect, useState, useRef } from 'react';
 import '../styles/Dashboard.css';
 import MultiChart from '../components/MultiChart.jsx';
 import GaugeChart from '../components/charts/GaugeChart.jsx';
@@ -30,7 +29,7 @@ const Dashboard = () => {
   const [activity, setActivity] = useState(null);
   const [wellness, setWellness] = useState(null);
   const [currentDataPoint, setCurrentDataPoint] = useState(null);
-  const [simulationSpeed, setSimulationSpeed] = useState(16); // Default 16ms
+  const [simulationSpeed, setSimulationSpeed] = useState(16);
   const [isSimulationRunning, setIsSimulationRunning] = useState(true);
 
   // Format timestamp for display

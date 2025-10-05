@@ -29,8 +29,8 @@
 .speed-controls {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
@@ -48,7 +48,7 @@
   font-weight: bold;
   font-family: 'Courier New', monospace;
   background: rgba(0, 255, 136, 0.1);
-  padding: 4px 12px;
+  padding: 2px 12px;
   border-radius: 6px;
   border: 1px solid rgba(0, 255, 136, 0.3);
   width: 180px;
@@ -141,8 +141,8 @@
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr 1fr; 
-  grid-template-areas: 
+  grid-template-rows: 1fr 1fr 1.25fr;
+  grid-template-areas:
     "multi multi multi stress steps"
     "multi multi multi status steps"
     "avgstages laststages index activity activity";
@@ -225,30 +225,29 @@
   
   .timestamp-display {
     font-size: 15px;
-    width: 170px;
+    width: 160px;
   }
   
   .speed-slider {
-    width: 130px;
+    width: 140px;
   }
   
   .dashboard-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1.25fr;
     grid-template-areas: 
-      "multi multi multi"
-      "multi multi multi"
-      "stress status steps"
+      "multi multi stress"
+      "multi multi status"
       "avgstages laststages index"
-      "activity activity activity";
-  }
+      "activity activity steps";
+    }
 }
 
 /* Mobile tablet breakpoint */
 @media (max-width: 768px) {
   .speed-controls {
-    flex-direction: column;
-    gap: 8px;
+    /* flex-direction: column; */
+    gap: 16px;
     padding: 8px 15px;
   }
   
@@ -258,11 +257,24 @@
   
   .timestamp-display {
     font-size: 14px;
-    width: 160px;
+    width: 140px;
   }
   
   .speed-slider {
     width: 120px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 200px 200px 200px 200px 250px;
+    grid-template-areas: 
+      "multi multi"
+      "multi multi"
+      "stress status"
+      "avgstages laststages"
+      "index steps"
+      "activity activity";
+    overflow-y: auto;
   }
 }
 
@@ -288,19 +300,16 @@
   }
 
   .dashboard-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px 200px 200px 250px 250px;
     grid-template-areas: 
-      "multi"
-      "stress"
-      "status" 
-      "steps"
-      "avgstages"
-      "laststages"
-      "index"
-      "activity";
+      "multi multi"
+      "multi multi"
+      "stress status"
+      "avgstages laststages"
+      "index steps"
+      "activity activity";
     overflow-y: auto;
-    overflow-x: hidden;
   }
   
   .card {
