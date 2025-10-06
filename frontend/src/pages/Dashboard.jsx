@@ -33,26 +33,26 @@ const Dashboard = () => {
   const [isSimulationRunning, setIsSimulationRunning] = useState(true);
 
   // Format timestamp for display
-const formatTimestamp = (timestamp) => {
-  if (!timestamp) return 'No Data';
-  
-  const date = new Date(timestamp.endsWith('Z') ? timestamp : timestamp + 'Z');
-  
-  const dateStr = date.toLocaleDateString('en-US', {
-    month: '2-digit',
-    day: '2-digit',
-    year: 'numeric'
-  });
-  
-  const timeStr = date.toLocaleTimeString('en-US', { 
-    hour12: false,
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit'
-  });
-  
-  return `${dateStr} ${timeStr}`;
-};
+  const formatTimestamp = (timestamp) => {
+    if (!timestamp) return 'No Data';
+    
+    const date = new Date(timestamp.endsWith('Z') ? timestamp : timestamp + 'Z');
+    
+    const dateStr = date.toLocaleDateString('en-US', {
+      month: '2-digit',
+      day: '2-digit',
+      year: 'numeric'
+    });
+    
+    const timeStr = date.toLocaleTimeString('en-US', { 
+      hour12: false,
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+    
+    return `${dateStr} ${timeStr}`;
+  };
 
   useEffect(() => { 
     const controller = new AbortController();
@@ -263,15 +263,20 @@ const formatTimestamp = (timestamp) => {
           </div>
           
           <div className="speed-section">
-            <label htmlFor="speed-slider">Speed: {simulationSpeed}ms</label>
+            <label htmlFor="speed-slider">Speed: {Math.round(60000 / simulationSpeed)}×{" "}({(1000 / simulationSpeed).toFixed(2)} min/sec)</label>
+            {/* <label htmlFor="speed-slider">Speed: {(1000 / simulationSpeed).toFixed(2)} min/sec</label> */}
             <input
               id="speed-slider"
               type="range"
-              min="1"
+              min="0"
               max="100"
               step="1"
-              value={simulationSpeed}
-              onChange={(e) => setSimulationSpeed(parseInt(e.target.value, 10))}
+              value={Math.log10(60000 / simulationSpeed) * 20} // Map to 0–100 scale
+              onChange={(e) => {
+                // Map slider 0–100 -> exponential scale 1× to ~600× faster
+                const newSpeed = 60000 / Math.pow(10, e.target.value / 20);
+                setSimulationSpeed(newSpeed);
+              }} // setSimulationSpeed(parseInt(e.target.value, 10))}
               className="speed-slider"
             />
             <button 

@@ -1,28 +1,30 @@
 # JavaScript Wellness Dashboard
 
-This project is an application demonstrating LightningChart JS, a high-performance data visualization library for JavaScript. The dashboard simulates real-time wellness and health monitoring data, showcasing various chart types and interactive visualizations.
+This project is an application demonstrating LightningChart JS, a high-performance data visualization library for JavaScript. The dashboard simulates wellness and health monitoring data playback, showcasing various chart types and interactive visualizations with time-based data simulation.
 
 LightningChart JS is entirely GPU accelerated and performance optimized charting library for presenting massive amounts of data. It offers an easy way of creating sophisticated and interactive charts and adding them to your website or web application.
 
 
 ## Description
 
-The Wellness Dashboard is a comprehensive health monitoring application that displays simulated fitness and wellness data in real-time. It features multiple chart types to visualize different aspects of health data:
+The Wellness Dashboard is a comprehensive health monitoring application that displays fitness and wellness data through interactive data playback simulation. It features multiple chart types to visualize different aspects of health data with controllable time progression.
 
 ### Key Features:
-- **Real-time simulation**: Data updates every 16ms simulating minute-by-minute health tracking with adjustable speed control (1x to 100x) and play/pause functionality.
+- **Time-based simulation**: Data playback simulating minute-by-minute health tracking with adjustable speed control (from 10 min/sec up to ultra-fast simulation) and play/pause functionality.
+- **Interactive speed control**: Logarithmic speed slider allowing users to control data playback from slow motion to ultra-fast simulation.
 - **Time-based events**: Special updates at midnight (activity summary) and 8 AM (sleep analysis).
-- **Historical data**: 7-day rolling averages and trends.
-- **Interactive visualizations**: GPU-accelerated charts with smooth animations.
-- **Comprehensive health metrics**: Sleep, activity, stress, heart rate, and temperature monitoring.
+- **Historical data**: 7-day rolling averages and trends visualization.
+- **Interactive visualizations**: GPU-accelerated charts with smooth animations and responsive design.
+- **Comprehensive health metrics**: Sleep stages, activity levels, stress, heart rate, and temperature monitoring.
+- **Responsive design**: Optimized layouts for desktop, tablet, and mobile devices with scrollable interface on smaller screens.
 
 ### Featured Chart Types:
-- **Multi-Chart**: Real-time heart rate, calories, and steps visualization.
+- **Multi-Chart**: Synchronized heart rate, calories, and steps visualization.
 - **Gauge Charts**: Stress level and body temperature monitoring.
-- **Bar Chart**: Daily steps progress tracking.
-- **Pie Chart**: Sleep quality averages over 7 days.
-- **Span Chart**: Sleep stages visualization (Light, Deep, REM sleep).
-- **Spider Chart**: Wellness index radar showing multiple health metrics.
+- **Bar Chart**: Daily steps progress tracking with target visualization.
+- **Pie Chart**: Sleep quality averages over 7 days with stage breakdown.
+- **Span Chart**: Sleep stages timeline (Light, Deep, REM sleep) with time-based visualization.
+- **Spider Chart**: Wellness index radar showing multiple health metrics comparison.
 - **Mosaic Chart**: 7-day activity levels.
 
 The data is based on one person's health data, edited and adapted from this dataset: 
@@ -34,10 +36,11 @@ Yfantidou, S., Karagianni, C., Efstathiou, S., Vakali, A., Palotti, J., Giakatos
 
 - Make sure that relevant version of [Node.js](https://nodejs.org/en/download/) is installed (Node 16+ recommended).
 
-- Install http-server globally for LightningChart theme resources:
+- Install http-server globally (required for the cyberSpace theme used in this project):
 ```bash
 npm install --global http-server
 ```
+*Note: This is only needed for certain LightningChart themes that use external assets. Built-in themes typically don't require this step.*
 
 - Create an `.env` file in the `/frontend` folder and add your license key there. You can see the format in `/frontend/.env.example`:
 ```
@@ -59,17 +62,23 @@ npm start
   - Backend API: http://localhost:5000
   - LightningChart Resources: http://localhost:8080
 
+### Controls:
+- **Speed Slider**: Adjust simulation speed from 10 min/sec to 1000+ min/sec
+- **Play/Pause Button**: Start or stop the data simulation
+- **Responsive Layout**: Automatically adapts to your screen size
 
 ### Project Structure:
 - `/backend` - Node.js server providing simulated health data APIs
 - `/frontend` - React application with LightningChart JS visualizations
 - `/frontend/src/components/charts/` - Individual chart components
 - `/frontend/src/utils/` - Data processing and calculation utilities
+- `/frontend/src/styles/` - CSS styling for responsive design
 
 ### Dependencies:
 - **Core**: React 18+, Node.js 16+
 - **Visualization**: @lightningchart/lcjs
-- **Development**: concurrently, http-server
+- **Theme Server**: http-server (globally installed, required for cyberSpace theme assets)
+- **Development**: concurrently
 - **Backend**: Express.js, CORS
 
 ## Links
@@ -81,6 +90,8 @@ npm start
 
 ## About the Creator
 I'm an IT Engineering student passionate about software development, web technologies, and building practical projects.
+
+This project is part of my internship at [LightningChart Ltd](https://lightningchart.com/), demonstrating how to build comprehensive data visualization dashboards with time-based data simulation, multiple chart types, and responsive design for various devices.
 
 Feel free to connect or provide feedback!
 
