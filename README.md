@@ -4,25 +4,31 @@ This project is an application demonstrating LightningChart JS, a high-performan
 
 LightningChart JS is entirely GPU accelerated and performance optimized charting library for presenting massive amounts of data. It offers an easy way of creating sophisticated and interactive charts and adding them to your website or web application.
 
+
 ## Description
 
 The Wellness Dashboard is a comprehensive health monitoring application that displays simulated fitness and wellness data in real-time. It features multiple chart types to visualize different aspects of health data:
 
-### Featured Chart Types:
-- **Multi-Chart**: Real-time heart rate, calories, and steps visualization
-- **Gauge Charts**: Stress level and body temperature monitoring
-- **Bar Chart**: Daily steps progress tracking
-- **Pie Chart**: Sleep quality averages over 7 days
-- **Span Chart**: Sleep stages visualization (Light, Deep, REM sleep)
-- **Spider Chart**: Wellness index radar showing multiple health metrics
-- **Mosaic Chart**: 7-day activity level heatmap
-
 ### Key Features:
-- **Real-time simulation**: Data updates every 16ms simulating minute-by-minute health tracking
-- **Time-based events**: Special updates at midnight (activity summary) and 8 AM (sleep analysis)
-- **Historical data**: 7-day rolling averages and trends
-- **Interactive visualizations**: GPU-accelerated charts with smooth animations
-- **Comprehensive health metrics**: Sleep, activity, stress, heart rate, and temperature monitoring
+- **Real-time simulation**: Data updates every 16ms simulating minute-by-minute health tracking with adjustable speed control (1x to 100x) and play/pause functionality.
+- **Time-based events**: Special updates at midnight (activity summary) and 8 AM (sleep analysis).
+- **Historical data**: 7-day rolling averages and trends.
+- **Interactive visualizations**: GPU-accelerated charts with smooth animations.
+- **Comprehensive health metrics**: Sleep, activity, stress, heart rate, and temperature monitoring.
+
+### Featured Chart Types:
+- **Multi-Chart**: Real-time heart rate, calories, and steps visualization.
+- **Gauge Charts**: Stress level and body temperature monitoring.
+- **Bar Chart**: Daily steps progress tracking.
+- **Pie Chart**: Sleep quality averages over 7 days.
+- **Span Chart**: Sleep stages visualization (Light, Deep, REM sleep).
+- **Spider Chart**: Wellness index radar showing multiple health metrics.
+- **Mosaic Chart**: 7-day activity levels.
+
+The data is based on one person's health data, edited and adapted from this dataset: 
+
+Yfantidou, S., Karagianni, C., Efstathiou, S., Vakali, A., Palotti, J., Giakatos, D. P., Marchioro, T., Kazlouski, A., Ferrari, E., & Girdzijauskas, Š. (2022). LifeSnaps: a 4-month multi-modal dataset capturing unobtrusive snapshots of our lives in the wild (Version 4) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7229547.
+
 
 ## How to Use
 
@@ -53,16 +59,6 @@ npm start
   - Backend API: http://localhost:5000
   - LightningChart Resources: http://localhost:8080
 
-### Alternative Start Commands:
-```bash
-# Start only backend and frontend (without CyberSpace theme)
-npm run start:dev
-
-# Start individual servers
-npm run backend    # Backend only
-npm run frontend   # Frontend only
-npm run lcjs-server # LightningChart resources only
-```
 
 ### Project Structure:
 - `/backend` - Node.js server providing simulated health data APIs
@@ -85,8 +81,6 @@ npm run lcjs-server # LightningChart resources only
 
 ## About the Creator
 I'm an IT Engineering student passionate about software development, web technologies, and building practical projects.
-
-This project is part of my portfolio, demonstrating skills in React, responsive design, and third-party API integration.
 
 Feel free to connect or provide feedback!
 
