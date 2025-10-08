@@ -38,13 +38,13 @@ const Dashboard = () => {
     
     const date = new Date(timestamp.endsWith('Z') ? timestamp : timestamp + 'Z');
     
-    const dateStr = date.toLocaleDateString('fi-FI', {
+    const dateStr = date.toLocaleDateString('en-US', {
       month: '2-digit',
       day: '2-digit',
       year: 'numeric'
     });
     
-    const timeStr = date.toLocaleTimeString('fi-FI', { 
+    const timeStr = date.toLocaleTimeString('en-US', { 
       hour12: false,
       hour: '2-digit',
       minute: '2-digit',

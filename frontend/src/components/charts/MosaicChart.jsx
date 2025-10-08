@@ -124,7 +124,7 @@ export default function MosaicChart(props) {
                                 const isNotFullscreen = window.innerWidth <= 1495;
 
                                 if (isNotFullscreen) {
-                                    // Convert date from "2022-01-21" to Finnish format "25.05.21"
+                                    // Convert date from "2022-01-21" to US format
                                     const dateStr = category.name;
                                     if (dateStr.includes('-') && dateStr.length === 10) {
                                         const parts = dateStr.split('-');
@@ -132,19 +132,18 @@ export default function MosaicChart(props) {
                                             const year = parts[0].slice(-2); // Get last 2 digits of year
                                             const month = parts[1];
                                             const day = parts[2];
-                                            return `${day}.${month}.${year}`; // Finnish short format: DD.MM.YY
+                                            return `${month}/${day}/${year}`;
                                         }
                                     }
                                 } else {
-                                    // For fullscreen, use long Finnish format "25.05.2021"
                                     const dateStr = category.name;
                                     if (dateStr.includes('-') && dateStr.length === 10) {
                                         const parts = dateStr.split('-');
                                         if (parts.length === 3) {
-                                            const year = parts[0]; // Full year
+                                            const year = parts[0]; 
                                             const month = parts[1];
                                             const day = parts[2];
-                                            return `${day}.${month}.${year}`; // Finnish long format: DD.MM.YYYY
+                                            return `${month}/${day}/${year}`; 
                                         }
                                     }
                                 }
