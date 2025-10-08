@@ -34,8 +34,9 @@ export default function SpanChart(props) {
             })
             chart.setTitle('Sleep Stages (Last Night)')
             .setUserInteractions(undefined)
-            .setCursorMode(undefined)
-            .setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
+            .setCursorMode(undefined).setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
+            // .setBackgroundFillStyle(emptyFill)
+            // chart.engine.setBackgroundFillStyle(emptyFill)
 
         // Store the actual chart instance
         actualChart = chart

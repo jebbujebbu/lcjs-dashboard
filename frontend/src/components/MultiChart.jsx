@@ -67,7 +67,13 @@ export default function MultiChart(props) {
         .addAxisY({ iStack: 3 - iCh })
         .setMargins(5, 5)
         .setInterval({ start: 0, end: 100 });
-      const lineSeries = xyChart.addLineSeries({ axisY }).setMaxSampleCount(10_000);
+      const lineSeries = xyChart.addLineSeries({ 
+        axisY,
+        schema: {
+          x: { pattern: 'progressive' },
+          y: { pattern: null }
+        }
+      }).setMaxSampleCount(10_000);
       lineSeries.setName(titles[iCh]);
       lineSeriesArray.push(lineSeries);
 

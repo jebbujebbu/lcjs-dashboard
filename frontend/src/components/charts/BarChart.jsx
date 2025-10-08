@@ -24,6 +24,7 @@ export default function BarChart(props) {
         legend: {
           addEntriesAutomatically: false,
         },
+        animationsEnabled: false
     })
     chart
     .setTitle('')

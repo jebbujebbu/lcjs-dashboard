@@ -38,6 +38,7 @@ export default function MosaicChart(props) {
         // Store the chart instance
         chartInstance = chart 
         const rectangles = chart.addRectangleSeries()
+        rectangles.setName('')
 
         const bottomAxis = chart
             .getDefaultAxisX()
@@ -54,7 +55,8 @@ export default function MosaicChart(props) {
             .addAxisY({ opposite: true })
             .setInterval({ start: 0, end: 100, stopAxisAfter: false })
             .setScrollStrategy(undefined)
-            .setTitle('%')
+            .setTitle('') 
+            .setTickStrategy(AxisTickStrategies.Empty) 
         const topAxis = chart
             .addAxisX({ opposite: true })
             .setInterval({ start: 0, end: 100, stopAxisAfter: false })
@@ -90,10 +92,24 @@ export default function MosaicChart(props) {
                 let xPos = 0
                 // For each category on a single column, recreate the marker to the left of the chart.
                 for (const yCategory of yCategories) {
+                    let textColor;
+                    if (yCategory.name === 'Low') {
+                        textColor = ColorHEX("#5262b0ff"); 
+                    } else if (yCategory.name === 'Medium') {
+                        textColor = ColorHEX("#8752b0ff");
+                    } else if (yCategory.name === 'High') {
+                        textColor = ColorHEX("#973869ff"); 
+                    } else {
+                        textColor = ColorHEX("#ffffff");
+                    }
+
                     yCategory.tick
                         .setTextFormatter((_) => yCategory.name)
                         .setValue(yCategory.value)
                         .setMarkerVisible(true)
+                        .setMarker((marker) => 
+                            marker.setTextFillStyle(new SolidFill({ color: textColor }))
+                        )
                 }
                 // For each category (or column)
                 for (const category of categories) {
@@ -104,7 +120,38 @@ export default function MosaicChart(props) {
                     if (sumSubCategoryValues > 0) {
                         // Recreate the tick to display above each category and set the correct value to it
                         category.tick
-                            .setTextFormatter((_) => category.name)
+                            .setTextFormatter((_) => {
+                                const isNotFullscreen = window.innerWidth <= 1495;
+
+                                if (isNotFullscreen) {
+                                    // Convert date from "2022-01-21" to Finnish format "25.05.21"
+                                    const dateStr = category.name;
+                                    if (dateStr.includes('-') && dateStr.length === 10) {
+                                        const parts = dateStr.split('-');
+                                        if (parts.length === 3) {
+                                            const year = parts[0].slice(-2); // Get last 2 digits of year
+                                            const month = parts[1];
+                                            const day = parts[2];
+                                            return `${day}.${month}.${year}`; // Finnish short format: DD.MM.YY
+                                        }
+                                    }
+                                } else {
+                                    // For fullscreen, use long Finnish format "25.05.2021"
+                                    const dateStr = category.name;
+                                    if (dateStr.includes('-') && dateStr.length === 10) {
+                                        const parts = dateStr.split('-');
+                                        if (parts.length === 3) {
+                                            const year = parts[0]; // Full year
+                                            const month = parts[1];
+                                            const day = parts[2];
+                                            return `${day}.${month}.${year}`; // Finnish long format: DD.MM.YYYY
+                                        }
+                                    }
+                                }
+                                
+                                // Default: return original name (for non-date strings)
+                                return category.name;
+                            })
                             .setValue(xPos + relativeCategoryValue / 2)
                             .setMarkerVisible(true)
                         let yPos = 0
@@ -126,6 +173,8 @@ export default function MosaicChart(props) {
                                 // Recreate the label for the subCategory and update the value for it
                                 subCategory.label
                                     .setText(Math.round(relativeSubCategoryValue) + '%')
+                                    // .setText(subCategory.subCategory.name + ' - ' + Math.round(relativeSubCategoryValue) + ' %')
+
                                     .setPosition({
                                         x: xPos + relativeCategoryValue / 2,
                                         y: yPos + relativeSubCategoryValue / 2,
@@ -239,9 +288,20 @@ export default function MosaicChart(props) {
     mosaicChartInterface.addYCategory('Low', 20)
 
     // Create subcategories for activity levels
-    const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
-    const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
-    const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
+    // const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
+    // const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
+    // const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
+    const subCategory_low = mosaicChartInterface.addSubCategory()
+    .setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
+    subCategory_low.name = 'Low'; // Add name property
+
+    const subCategory_medium = mosaicChartInterface.addSubCategory()
+        .setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
+    subCategory_medium.name = 'Medium'; // Add name property
+
+    const subCategory_high = mosaicChartInterface.addSubCategory()
+        .setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
+    subCategory_high.name = 'High'; // Add name property
 
     setChart({
       interface: mosaicChartInterface,
