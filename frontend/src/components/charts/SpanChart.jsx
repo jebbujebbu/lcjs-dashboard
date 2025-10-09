@@ -1,10 +1,9 @@
-import { SolidFill, ColorRGBA, AxisTickStrategies, Themes, ColorHEX } from "@lightningchart/lcjs";
+import { SolidFill, ColorRGBA, AxisTickStrategies, Themes, ColorHEX, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
 export default function SpanChart(props) {
   const data = props.data;
-  // console.log(`SpanChart data`, data);
   const id = useId();
   const lc = useContext(LCContext);
   const [chart, setChart] = useState(undefined);
@@ -31,10 +30,12 @@ export default function SpanChart(props) {
                 legend: { visible: false },
                 theme: Themes.cyberSpace,
                 container,
+                textRenderer: htmlTextRenderer
             })
             chart.setTitle('Sleep Stages (Last Night)')
             .setUserInteractions(undefined)
             .setCursorMode(undefined).setBackgroundFillStyle(new SolidFill({ color: ColorHEX('#060316') }));
+            // If needed, set empty background
             // .setBackgroundFillStyle(emptyFill)
             // chart.engine.setBackgroundFillStyle(emptyFill)
 
@@ -54,7 +55,7 @@ export default function SpanChart(props) {
         let y = 0
         for (let i = 20; i <= 32; i++) { // Example: show 20h (8 PM) → 32h (8 AM next day)
             const hour = i % 24
-            const label = hour.toString().padStart(2, '0') // + ":00"
+            const label = hour.toString().padStart(2, '0')
             axisX
                 .addCustomTick()
                 .setValue(i)
@@ -123,7 +124,7 @@ export default function SpanChart(props) {
     chart.stageMap = {}
     chart.rectangleSeries = [] // Track rectangle series for clearing
     stages.forEach((stage, i) => {
-    chart.stageMap[stage] = i   // e.g. { light:0, deep:1, rem:2 }
+    chart.stageMap[stage] = i   // E.g. { light:0, deep:1, rem:2 }
     })
     
     const spans = []
@@ -164,9 +165,9 @@ export default function SpanChart(props) {
 
     data.forEach((entry) => {
       const { stage, spans } = entry
-      if (stage === "wake") return // skip wake in chart
+      if (stage === "wake") return // Skip wake in chart
 
-      // find correct category row
+      // Find correct category row
       const idx = chart.stageMap[stage]
       if (idx === undefined) {
         console.warn("Unknown stage:", stage)

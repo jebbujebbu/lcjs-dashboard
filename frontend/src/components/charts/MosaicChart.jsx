@@ -1,4 +1,4 @@
-import { SolidFill, ColorHEX, ColorRGBA, emptyLine, emptyFill, UIElementBuilders, UIOrigins, AxisTickStrategies, Themes } from "@lightningchart/lcjs";
+import { SolidFill, ColorHEX, ColorRGBA, emptyLine, emptyFill, UIElementBuilders, UIOrigins, AxisTickStrategies, Themes, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -29,6 +29,7 @@ export default function MosaicChart(props) {
                 legend: { visible: false },
                 theme: Themes.cyberSpace,
                 container,
+                textRenderer: htmlTextRenderer
             })
             .setTitle('Weekly Activity')
             .setUserInteractions(undefined)
@@ -147,7 +148,6 @@ export default function MosaicChart(props) {
                                         }
                                     }
                                 }
-                                
                                 // Default: return original name (for non-date strings)
                                 return category.name;
                             })
@@ -172,7 +172,6 @@ export default function MosaicChart(props) {
                                 // Recreate the label for the subCategory and update the value for it
                                 subCategory.label
                                     .setText(Math.round(relativeSubCategoryValue) + '%')
-                                    // .setText(subCategory.subCategory.name + ' - ' + Math.round(relativeSubCategoryValue) + ' %')
 
                                     .setPosition({
                                         x: xPos + relativeCategoryValue / 2,
@@ -287,20 +286,17 @@ export default function MosaicChart(props) {
     mosaicChartInterface.addYCategory('Low', 20)
 
     // Create subcategories for activity levels
-    // const subCategory_low = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
-    // const subCategory_medium = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
-    // const subCategory_high = mosaicChartInterface.addSubCategory().setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
     const subCategory_low = mosaicChartInterface.addSubCategory()
     .setFillStyle(new SolidFill().setColor(ColorHEX("#5262b0ff")))
-    subCategory_low.name = 'Low'; // Add name property
+    subCategory_low.name = 'Low'; 
 
     const subCategory_medium = mosaicChartInterface.addSubCategory()
         .setFillStyle(new SolidFill().setColor(ColorHEX("#8752b0ff")))
-    subCategory_medium.name = 'Medium'; // Add name property
+    subCategory_medium.name = 'Medium'; 
 
     const subCategory_high = mosaicChartInterface.addSubCategory()
         .setFillStyle(new SolidFill().setColor(ColorHEX("#973869ff")))
-    subCategory_high.name = 'High'; // Add name property
+    subCategory_high.name = 'High'; 
 
     setChart({
       interface: mosaicChartInterface,

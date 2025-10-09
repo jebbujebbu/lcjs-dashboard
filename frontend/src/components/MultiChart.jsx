@@ -1,4 +1,4 @@
-import { Themes, AxisScrollStrategies, AxisTickStrategies, emptyLine, SolidFill, ColorHEX } from "@lightningchart/lcjs";
+import { Themes, AxisScrollStrategies, AxisTickStrategies, emptyLine, SolidFill, ColorHEX, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../LC";
 
@@ -46,6 +46,7 @@ export default function MultiChart(props) {
       container: xyContainer,
       theme: Themes.cyberSpace,
       legend: { visible: false },
+      textRenderer: htmlTextRenderer
     })
       .setTitle("")
       .setCursor((cursor) => cursor.setTickMarkerXVisible(false))
@@ -69,6 +70,7 @@ export default function MultiChart(props) {
         .setInterval({ start: 0, end: 100 });
       const lineSeries = xyChart.addLineSeries({ 
         axisY,
+        // Define data pattern
         schema: {
           x: { pattern: 'progressive' },
           y: { pattern: null }
@@ -84,6 +86,7 @@ export default function MultiChart(props) {
       const gauge = lc.Gauge({
         container: gaugeContainer,
         theme: Themes.cyberSpace,
+        textRenderer: htmlTextRenderer
       })
         .setTitle("")
         .setUnitLabel(titles[iCh])

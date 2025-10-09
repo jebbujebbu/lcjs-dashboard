@@ -36,24 +36,14 @@ const Dashboard = () => {
   const formatTimestamp = (timestamp) => {
     if (!timestamp) return 'No Data';
     
-    const date = new Date(timestamp.endsWith('Z') ? timestamp : timestamp + 'Z');
+    const dateStr = timestamp.slice(0, 10); 
+    const timeStr = timestamp.slice(11, 19); 
+    const [year, month, day] = dateStr.split('-');
     
-    const dateStr = date.toLocaleDateString('en-US', {
-      month: '2-digit',
-      day: '2-digit',
-      year: 'numeric'
-    });
-    
-    const timeStr = date.toLocaleTimeString('en-US', { 
-      hour12: false,
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit'
-    });
-    
-    return `${dateStr} ${timeStr}`;
+    return `${month}/${day}/${year} ${timeStr}`;
   };
 
+  // Fetch data on component mount
   useEffect(() => { 
     const controller = new AbortController();
 
@@ -92,6 +82,8 @@ const Dashboard = () => {
     };
   }, []);
 
+
+  // Main simulation loop
   useEffect(() => {
     if (minuteSeries.length === 0 || hourSeries.length === 0 || daySeries.length === 0 || !isSimulationRunning) {
       console.log("Waiting for data or simulation paused...");
@@ -100,154 +92,159 @@ const Dashboard = () => {
 
     const interval = setInterval(() => {
       // Update minute data every cycle
-      let nextMinuteIndex = (minuteIndexRef.current + 1) % minuteSeries.length;
-      const currentMinuteData = minuteSeries[nextMinuteIndex];
+    const currentMinuteData = minuteSeries[minuteIndexRef.current];
 
-      if (!currentMinuteData?.timestamp) {
-        minuteIndexRef.current = nextMinuteIndex;
-        return;
+    if (!currentMinuteData?.timestamp) {
+      minuteIndexRef.current = (minuteIndexRef.current + 1) % minuteSeries.length;
+      return;
+    }
+
+    const currentTime = currentMinuteData.timestamp;
+    const date = currentTime.split('T')[0];
+    const hour =  parseInt(currentTime.slice(11, 13));
+    const minute = parseInt(currentTime.slice(14, 16));
+
+    // Check if hour changed, update hourSeries data
+    if (minute === 0) {
+      let nextHourIndex = (hourIndexRef.current + 1) % hourSeries.length;
+      const currentHourData = hourSeries[nextHourIndex];
+
+      // Merge minute and hour data
+      const combinedData = {
+        ...currentMinuteData,
+        stress: currentHourData?.stress,
+        temperature: currentHourData?.temperature,
+        steps: dailySteps + (currentMinuteData.steps || 0)            
+      };
+
+      setCurrentDataPoint(combinedData);
+      hourIndexRef.current = nextHourIndex;
+    } else {
+      // Just update with minute data + accumulated steps
+      const updatedData = {
+        ...currentMinuteData,
+        steps: dailySteps + (currentMinuteData.steps || 0)  
       }
+      setCurrentDataPoint(updatedData);
+    }
 
-      const currentTime = currentMinuteData.timestamp;
-      const date = currentTime.split('T')[0];
-      const hour =  parseInt(currentTime.slice(11, 13));
-      const minute = parseInt(currentTime.slice(14, 16));
+    // Handle 00:00 updates
+    if (hour === 0 && minute === 0) {
+      // Reset daily steps
+      setDailySteps(0);
 
-      // Check if hour changed, update hourSeries data
-      if (minute === 0)  {
-        let nextHourIndex = (hourIndexRef.current + 1) % hourSeries.length;
-        const currentHourData = hourSeries[nextHourIndex];
-
-        // Merge minute and hour data
-        const combinedData = {
-          ...currentMinuteData,
-          stress: currentHourData?.stress,
-          temperature: currentHourData?.temperature,
-          steps: dailySteps + (currentMinuteData.steps || 0)            
-        };
-
-        setCurrentDataPoint(combinedData);
-
-        hourIndexRef.current = nextHourIndex;
-      } else {
-        // Just update with minute data + accumulated steps
-        const updatedData = {
-          ...currentMinuteData,
-          steps: dailySteps + (currentMinuteData.steps || 0)  
-        }
-        setCurrentDataPoint(updatedData);
-      }
-
-      // Handle 00:00 updates
-      if (hour === 0 && minute === 0)  {
-
-        // Reset daily steps
-        setDailySteps(0);
-
-        // Update MosaicChart with 7-day activity data
-        const last7days = getLast7Days(minuteSeries, currentTime);  //currentTime "2021-05-24T00:00:00Z"
-        
-        // Group by day and hour, calculate hourly totals
-        const dailyHourlyTotals = {};
-        last7days.forEach(record => {
-          const day = record.timestamp.split('T')[0];  
-          const hour = parseInt(record.timestamp.slice(11, 13)); 
-          
-          if (!dailyHourlyTotals[day]) {
-            dailyHourlyTotals[day] = {};
-          }
-          if (!dailyHourlyTotals[day][hour]) {
-            dailyHourlyTotals[day][hour] = { calories: 0, steps: 0 };
-          }
-          
-          dailyHourlyTotals[day][hour].calories += record.calories || 0;
-          dailyHourlyTotals[day][hour].steps += record.steps || 0;
-        });
-
-        // Calculate activity percentages for each day
-        const activityArray = Object.entries(dailyHourlyTotals)
-          .sort(([dateA], [dateB]) => dateA.localeCompare(dateB)) // Sort by date
-          .map(([date, hourlyTotals]) => {
-            const hourlyScores = { low: 0, medium: 0, high: 0 };
-            const totalHours = Object.keys(hourlyTotals).length;
-            
-            // Calculate score for each hour
-            Object.values(hourlyTotals).forEach(hourData => {
-              const score = calcActivityScore(hourData.calories, hourData.steps);
-              hourlyScores[score]++;
-            });
-            
-            // Convert to percentages
-            const result = {
-              date: date,
-              low: Math.round((hourlyScores.low / totalHours) * 100),
-              medium: Math.round((hourlyScores.medium / totalHours) * 100),
-              high: Math.round((hourlyScores.high / totalHours) * 100),
-              totalHours: totalHours
-            };
-            return result;
-          });
-
-        setActivity(activityArray);
-      } else {
-        // Accumulate steps throughout the day
-        setDailySteps(prev => prev + (currentMinuteData.steps || 0));
-      }
-
-      // Handle 08:00 updates
-      if (hour === 8 && minute === 0) {
-
-        // Find last night's sleep data
-        const lastNight = daySeries.find(day => day.date === date);
-
-        if (lastNight?.sleep) {
-          const spans = toChartSpans(lastNight.sleep.levels);
-          setCurrentStages(spans);
-
-          // Calculate 7-night average
-          const last7Nights = getLast7Days(sleepSeries, currentTime);
-
-          const avgSleep = calcSleepAverages(last7Nights);
-
-          setAvgStages(avgSleep);
-
-        } else {
-          console.log("No sleep data found for", date);
-        }
-
-        // Get yesterday's data for wellness calculation
-        const currentDateTime = new Date(currentTime + (currentTime.endsWith('Z') ? '' : 'Z'));
-        const yesterday = new Date(currentDateTime.getTime() - (24 * 60 * 60 * 1000));
-        const yesterdayStr = yesterday.toISOString().split('T')[0];
-
-        // Get yesterday's minute data
-        const yesterdayMinuteData = minuteSeries.filter(record => 
-          record?.timestamp && record.timestamp.startsWith(yesterdayStr)
-        );
-
-        // Get yesterday's hour data  
-        const yesterdayHourData = hourSeries.filter(record =>
-          record?.timestamp && record.timestamp.startsWith(yesterdayStr)
-        );
-        
-        // Calculate wellness index for yesterday
-        const wellnessIndex = calcWellnessIndex(
-          yesterdayMinuteData, 
-          yesterdayHourData,
-          lastNight.sleep            
-        );
-        
-        setWellness(wellnessIndex);
-      }
-
-      setCurrentSteps(currentMinuteData.steps);
+      // Update MosaicChart with 7-day activity data
+      const last7days = getLast7Days(minuteSeries, currentTime); 
       
-      minuteIndexRef.current = nextMinuteIndex;
-    }, simulationSpeed); 
+      // Group by day and hour, calculate hourly totals
+      const dailyHourlyTotals = {};
+      last7days.forEach(record => {
+        const day = record.timestamp.split('T')[0];  
+        const hour = parseInt(record.timestamp.slice(11, 13)); 
+        
+        if (!dailyHourlyTotals[day]) {
+          dailyHourlyTotals[day] = {};
+        }
+        if (!dailyHourlyTotals[day][hour]) {
+          dailyHourlyTotals[day][hour] = { calories: 0, steps: 0 };
+        }
+        
+        dailyHourlyTotals[day][hour].calories += record.calories || 0;
+        dailyHourlyTotals[day][hour].steps += record.steps || 0;
+      });
 
-    return () => clearInterval(interval);
-  }, [minuteSeries, hourSeries, daySeries, sleepSeries, dailySteps, simulationSpeed, isSimulationRunning]);
+      // Calculate activity percentages for each day
+      const activityArray = Object.entries(dailyHourlyTotals)
+      .sort(([dateA], [dateB]) => dateA.localeCompare(dateB)) // Sort by date
+      .map(([date, hourlyTotals]) => {
+        const hourlyScores = { low: 0, medium: 0, high: 0 };
+        const totalHours = Object.keys(hourlyTotals).length;
+        
+        // Calculate score for each hour
+        Object.values(hourlyTotals).forEach(hourData => {
+          const score = calcActivityScore(hourData.calories, hourData.steps);
+          hourlyScores[score]++;
+        });
+        
+        // Convert to percentages
+        const result = {
+          date: date,
+          low: Math.round((hourlyScores.low / totalHours) * 100),
+          medium: Math.round((hourlyScores.medium / totalHours) * 100),
+          high: Math.round((hourlyScores.high / totalHours) * 100),
+          totalHours: totalHours
+        };
+        return result;
+      });
 
+      setActivity(activityArray);
+    } else {
+      // Accumulate steps throughout the day
+      setDailySteps(prev => prev + (currentMinuteData.steps || 0));
+    }
+
+    // Handle 08:00 updates
+    if (hour === 8 && minute === 0) {
+
+      // Find last night's sleep data
+      const lastNight = daySeries.find(day => day.date === date);
+
+      if (lastNight?.sleep) {
+        const spans = toChartSpans(lastNight.sleep.levels);
+        setCurrentStages(spans);
+
+        // Calculate 7-night average
+        const last7Nights = getLast7Days(sleepSeries, currentTime);
+
+        const avgSleep = calcSleepAverages(last7Nights);
+
+        setAvgStages(avgSleep);
+
+      } else {
+        console.log("No sleep data found for", date);
+      }
+
+      // Get yesterday's data for wellness calculation
+      const currentDateTime = new Date(currentTime + (currentTime.endsWith('Z') ? '' : 'Z'));
+      const yesterday = new Date(currentDateTime.getTime() - (24 * 60 * 60 * 1000));
+      const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+      // Get yesterday's minute data
+      const yesterdayMinuteData = minuteSeries.filter(record => 
+        record?.timestamp && record.timestamp.startsWith(yesterdayStr)
+      );
+
+      // Get yesterday's hour data  
+      const yesterdayHourData = hourSeries.filter(record =>
+        record?.timestamp && record.timestamp.startsWith(yesterdayStr)
+      );
+      
+      // Calculate wellness index for yesterday
+      const wellnessIndex = calcWellnessIndex(
+        yesterdayMinuteData, 
+        yesterdayHourData,
+        lastNight.sleep            
+      );
+      
+      setWellness(wellnessIndex);
+    }
+
+    // Increment to next minute
+    minuteIndexRef.current = (minuteIndexRef.current + 1) % minuteSeries.length;
+
+    // Update hour index if we're at a new hour
+    if (minute === 0) {
+      hourIndexRef.current = (hourIndexRef.current + 1) % hourSeries.length;
+    }
+
+    setCurrentSteps(currentMinuteData.steps);
+    
+  }, simulationSpeed); 
+
+  return () => clearInterval(interval);
+}, [minuteSeries, hourSeries, daySeries, sleepSeries, dailySteps, simulationSpeed, isSimulationRunning]);
+
+  // Show loading state if data not yet loaded
   if (minuteSeries.length === 0) {
     console.log("Loading data, minuteSeries.length:", minuteSeries.length);
     return <p>Loading data…</p>;
@@ -264,7 +261,6 @@ const Dashboard = () => {
           
           <div className="speed-section">
             <label htmlFor="speed-slider">Speed: {Math.round(60000 / simulationSpeed)}×{" "}({(1000 / simulationSpeed).toFixed(2)} min/sec)</label>
-            {/* <label htmlFor="speed-slider">Speed: {(1000 / simulationSpeed).toFixed(2)} min/sec</label> */}
             <input
               id="speed-slider"
               type="range"
@@ -276,7 +272,7 @@ const Dashboard = () => {
                 // Map slider 0–100 -> exponential scale 1× to ~600× faster
                 const newSpeed = 60000 / Math.pow(10, e.target.value / 20);
                 setSimulationSpeed(newSpeed);
-              }} // setSimulationSpeed(parseInt(e.target.value, 10))}
+              }}
               className="speed-slider"
             />
             <button 

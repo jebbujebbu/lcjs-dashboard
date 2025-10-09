@@ -11,7 +11,7 @@ export default function calcSleepAverages(sleepArray) {
         acc.deep += night.sleep.deep?.minutes || 0
         acc.light += night.sleep.light?.minutes || 0
         acc.rem += night.sleep.rem?.minutes || 0
-        // ignore wake
+        // Ignore wake
       }
       return acc
     },

@@ -1,5 +1,5 @@
 // React logic for managing LightningChart JS instances that are shared
-// between any LCJS based components that can be visible at the same time
+// between any LCJS based components that can be visible at the same time.
 // In simple use cases with 1-2 charts visible at once, there is no need to use these.
 // However, with more charts visible at once, this gives an incredible performance advantage, since all charts use a shared LC context.
 

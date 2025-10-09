@@ -1,4 +1,4 @@
-import { Themes, SolidFill, ColorHEX } from "@lightningchart/lcjs";
+import { Themes, SolidFill, ColorHEX, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -23,6 +23,7 @@ export default function SpiderChart(props) {
       legend: { visible: false },
       theme: Themes.cyberSpace,
       container,
+      textRenderer: htmlTextRenderer
     });
 
     chart.setTitle('Wellness Index')

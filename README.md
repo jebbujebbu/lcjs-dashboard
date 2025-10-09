@@ -70,16 +70,17 @@ npm start
 ### Project Structure:
 - `/backend` - Node.js server providing simulated health data APIs
 - `/frontend` - React application with LightningChart JS visualizations
-- `/frontend/src/components/charts/` - Individual chart components
+- `/frontend/src/components/charts/` - Individual chart controls
 - `/frontend/src/utils/` - Data processing and calculation utilities
 - `/frontend/src/styles/` - CSS styling for responsive design
 
 ### Dependencies:
-- **Core**: React 18+, Node.js 16+
-- **Visualization**: @lightningchart/lcjs
+- **Core**: React 19.1.1, Node.js
+- **Visualization**: @lightningchart/lcjs ^8.0.2
+- **HTTP Client**: native fetch API
 - **Theme Server**: http-server (globally installed, required for cyberSpace theme assets)
-- **Development**: concurrently
-- **Backend**: Express.js, CORS
+- **Development**: concurrently, react-scripts 5.0.1
+- **Performance Monitoring**: web-vitals ^2.1.4
 
 ## Links
 

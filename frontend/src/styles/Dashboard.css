@@ -246,7 +246,6 @@
 /* Mobile tablet breakpoint */
 @media (max-width: 768px) {
   .speed-controls {
-    /* flex-direction: column; */
     gap: 16px;
     padding: 8px 15px;
   }

@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
-import { ColorHEX, Themes, SolidFill } from "@lightningchart/lcjs";
+import { ColorHEX, Themes, SolidFill, htmlTextRenderer } from "@lightningchart/lcjs";
 
 export default function GaugeChart(props) {
   const { data } = props.data;
@@ -20,6 +20,7 @@ export default function GaugeChart(props) {
     const gauge = lc.Gauge({
       container, // Add container to gauge creation
       theme: Themes.cyberSpace,
+      textRenderer: htmlTextRenderer
     });
     gauge
       .setTitle('')

@@ -5,7 +5,7 @@ import { getMinuteSeries, getHourSeries, getDaySeries, getSleepSeries, loadJSON 
 const app = express()
 const port = 5000;
 
-app.use(cors()) // Allow CORS - can be configured for better security if needed
+app.use(cors())
 app.use(express.json())
 
 // Load data on server start
@@ -17,6 +17,7 @@ app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
 });
 
+// Data API endpoint - returns minute, hour, and day series data
 app.get("/api/data", (req, res) => {
   try {
     console.log("/api/data endpoint hit");

@@ -1,4 +1,4 @@
-import { PieChartTypes, SliceLabelFormatters, Themes, SolidFill, ColorHEX } from "@lightningchart/lcjs";
+import { PieChartTypes, SliceLabelFormatters, Themes, SolidFill, ColorHEX, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -20,6 +20,7 @@ export default function PieChart({ data, title }) {
       theme: Themes.cyberSpace,
       type: pieType,
       container: container,
+      textRenderer: htmlTextRenderer
     });
 
     pie.setTitle(title || "Sleep Stages")

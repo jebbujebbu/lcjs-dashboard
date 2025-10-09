@@ -1,4 +1,4 @@
-import { Themes, ColorHEX, SolidFill } from "@lightningchart/lcjs";
+import { Themes, ColorHEX, SolidFill, htmlTextRenderer } from "@lightningchart/lcjs";
 import { useEffect, useState, useContext, useId } from "react";
 import { LCContext } from "../../LC";
 
@@ -24,7 +24,8 @@ export default function BarChart(props) {
         legend: {
           addEntriesAutomatically: false,
         },
-        animationsEnabled: false
+        animationsEnabled: false,
+        textRenderer: htmlTextRenderer
     })
     chart
     .setTitle('')

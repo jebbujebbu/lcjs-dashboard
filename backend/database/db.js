@@ -37,11 +37,6 @@ export function loadJSON() {
   console.log(`Loaded data`);
 }
 
-// Get the loaded data
-// export function getData() {
-//   return db
-// }
-
 export function getMinuteSeries() {
   return perMinute
 }
