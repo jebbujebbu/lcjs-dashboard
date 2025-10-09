@@ -9,19 +9,21 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 
 The Wellness Dashboard is a comprehensive health monitoring application that displays fitness and wellness data through interactive data playback simulation. It features multiple chart types to visualize different aspects of health data with controllable time progression.
 
+### Screenshot
+
+![Dashboard Screenshot](./screenshot.png)
+*LightningChart JS Wellness Dashboard showing real-time health data visualization with multiple chart types*
+
 ### Key Features:
-- **Time-based simulation**: Data playback simulating minute-by-minute health tracking with adjustable speed control (from 10 min/sec up to ultra-fast simulation) and play/pause functionality.
-- **Interactive speed control**: Logarithmic speed slider allowing users to control data playback from slow motion to ultra-fast simulation.
-- **Time-based events**: Special updates at midnight (activity summary) and 8 AM (sleep analysis).
-- **Historical data**: 7-day rolling averages and trends visualization.
-- **Interactive visualizations**: GPU-accelerated charts with smooth animations and responsive design.
-- **Comprehensive health metrics**: Sleep stages, activity levels, stress, heart rate, and temperature monitoring.
+- **Time-based simulation**: Data playback simulating minute-by-minute health tracking with adjustable speed control (from 1 min/sec up to ultra-fast simulation) and play/pause functionality.
+- **Time-based events**: Data updates every minute, with special updates at midnight (Activity Summary) and 8 AM (Sleep Analysis, Wellness Index).
+- **Comprehensive health metrics**: Heart rate, activity (steps/min, kcal/min), stress level, body temperature, daily steps count, sleep quality averages, previous night’s sleep stages, 7 day’s activity levels, wellness index (shows how the user’s points compare to the average person’s).
 - **Responsive design**: Optimized layouts for desktop, tablet, and mobile devices with scrollable interface on smaller screens.
 
 ### Featured Chart Types:
 - **Multi-Chart**: Synchronized heart rate, calories, and steps visualization.
 - **Gauge Charts**: Stress level and body temperature monitoring.
-- **Bar Chart**: Daily steps progress tracking with target visualization.
+- **Bar Chart**: Daily steps progress tracking with target (25k) visualization.
 - **Pie Chart**: Sleep quality averages over 7 days with stage breakdown.
 - **Span Chart**: Sleep stages timeline (Light, Deep, REM sleep) with time-based visualization.
 - **Spider Chart**: Wellness index radar showing multiple health metrics comparison.
@@ -63,7 +65,7 @@ npm start
   - LightningChart Resources: http://localhost:8080
 
 ### Controls:
-- **Speed Slider**: Adjust simulation speed from 10 min/sec to 1000+ min/sec
+- **Speed Slider**: Adjust simulation speed from 1 min/sec to 1000+ min/sec
 - **Play/Pause Button**: Start or stop the data simulation
 - **Responsive Layout**: Automatically adapts to your screen size
 
