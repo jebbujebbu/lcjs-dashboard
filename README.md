@@ -29,6 +29,7 @@ The Wellness Dashboard is a comprehensive health monitoring application that dis
 - **Spider Chart**: Wellness index radar showing multiple health metrics comparison.
 - **Mosaic Chart**: 7-day activity levels.
 
+### Data Source
 The data is based on one person's health data, edited and adapted from this dataset: 
 
 Yfantidou, S., Karagianni, C., Efstathiou, S., Vakali, A., Palotti, J., Giakatos, D. P., Marchioro, T., Kazlouski, A., Ferrari, E., & Girdzijauskas, Š. (2022). LifeSnaps: a 4-month multi-modal dataset capturing unobtrusive snapshots of our lives in the wild (Version 4) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7229547.
