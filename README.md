@@ -10,17 +10,16 @@ LightningChart JS is entirely GPU accelerated and performance optimized charting
 The Wellness Dashboard is a comprehensive health monitoring application that displays fitness and wellness data through interactive data playback simulation. It features multiple chart types to visualize different aspects of health data with controllable time progression.
 
 ### Screenshot
-
 ![Dashboard Screenshot](./screenshot.png)
 *LightningChart JS Wellness Dashboard showing real-time health data visualization with multiple chart types*
 
-### Key Features:
+### Key Features
 - **Time-based simulation**: Data playback simulating minute-by-minute health tracking with adjustable speed control (from 1 min/sec up to ultra-fast simulation) and play/pause functionality.
 - **Time-based events**: Data updates every minute, with special updates at midnight (Activity Summary) and 8 AM (Sleep Analysis, Wellness Index).
 - **Comprehensive health metrics**: Heart rate, activity (steps/min, kcal/min), stress level, body temperature, daily steps count, sleep quality averages, previous night’s sleep stages, 7 day’s activity levels, wellness index (shows how the user’s points compare to the average person’s).
 - **Responsive design**: Optimized layouts for desktop, tablet, and mobile devices with scrollable interface on smaller screens.
 
-### Featured Chart Types:
+### Featured Chart Types
 - **Multi-Chart**: Synchronized heart rate, calories, and steps visualization.
 - **Gauge Charts**: Stress level and body temperature monitoring.
 - **Bar Chart**: Daily steps progress tracking with target (25k) visualization.
@@ -32,7 +31,7 @@ The Wellness Dashboard is a comprehensive health monitoring application that dis
 ### Data Source
 The data is based on one person's health data, edited and adapted from this dataset: 
 
-Yfantidou, S., Karagianni, C., Efstathiou, S., Vakali, A., Palotti, J., Giakatos, D. P., Marchioro, T., Kazlouski, A., Ferrari, E., & Girdzijauskas, Š. (2022). LifeSnaps: a 4-month multi-modal dataset capturing unobtrusive snapshots of our lives in the wild (Version 4) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7229547.
+*Yfantidou, S., Karagianni, C., Efstathiou, S., Vakali, A., Palotti, J., Giakatos, D. P., Marchioro, T., Kazlouski, A., Ferrari, E., & Girdzijauskas, Š. (2022). LifeSnaps: a 4-month multi-modal dataset capturing unobtrusive snapshots of our lives in the wild (Version 4) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.7229547.*
 
 
 ## How to Use
@@ -70,14 +69,14 @@ npm start
 - **Play/Pause Button**: Start or stop the data simulation
 - **Responsive Layout**: Automatically adapts to your screen size
 
-### Project Structure:
+### Project Structure
 - `/backend` - Node.js server providing simulated health data APIs
 - `/frontend` - React application with LightningChart JS visualizations
 - `/frontend/src/components/charts/` - Individual chart controls
 - `/frontend/src/utils/` - Data processing and calculation utilities
 - `/frontend/src/styles/` - CSS styling for responsive design
 
-### Dependencies:
+### Dependencies
 - **Core**: React 19.1.1, Node.js
 - **Visualization**: @lightningchart/lcjs ^8.0.2
 - **HTTP Client**: native fetch API
@@ -85,8 +84,8 @@ npm start
 - **Development**: concurrently, react-scripts 5.0.1
 - **Performance Monitoring**: web-vitals ^2.1.4
 
-## Links
 
+## Links
 - [LightningChart JS Official Website](https://lightningchart.com/js-charts/)
 - [LightningChart JS Documentation](https://lightningchart.com/js-charts/docs/)
 - [LightningChart JS API Reference](https://lightningchart.com/js-charts/api-documentation/)
