@@ -2,7 +2,7 @@
 
 This project is an application demonstrating LightningChart JS, a high-performance data visualization library for JavaScript. The dashboard simulates wellness and health monitoring data playback, showcasing various chart types and interactive visualizations with time-based data simulation.
 
-LightningChart JS is entirely GPU accelerated and performance optimized charting library for presenting massive amounts of data. It offers an easy way of creating sophisticated and interactive charts and adding them to your website or web application.
+LightningChart JS is entirely GPU-accelerated and performance optimized charting library for presenting massive amounts of data. It offers an easy way of creating sophisticated and interactive charts and adding them to your website or web application.
 
 
 ## Description
@@ -46,12 +46,13 @@ npm install --global http-server
 
 - Create an `.env` file in the `/frontend` folder and add your license key there. You can see the format in `/frontend/.env.example`:
 ```
-REACT_APP_LCJS_LICENSE=your_license_key_here
+REACT_APP_LCJS_LICENSE="your_license_key_here"
 ```
 
 - Install dependencies in terminal, in project root:
 ```bash
-npm install
+npm i
+npm i @lightningchart/lcjs
 ```
 
 - Start the development servers (backend, frontend, and LightningChart resources):
