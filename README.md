@@ -1,4 +1,4 @@
-# JavaScript Wellness Dashboard
+# JavaScript Health Dashboard
 
 This project is an application demonstrating LightningChart JS, a high-performance data visualization library for JavaScript. The dashboard simulates wellness and health monitoring data playback, showcasing various chart types and interactive visualizations with time-based data simulation.
 
@@ -7,11 +7,11 @@ LightningChart JS is entirely GPU-accelerated and performance optimized charting
 
 ## Description
 
-The Wellness Dashboard is a comprehensive health monitoring application that displays fitness and wellness data through interactive data playback simulation. It features multiple chart types to visualize different aspects of health data with controllable time progression.
+The Health Dashboard is a comprehensive health monitoring application that displays fitness and wellness data through interactive data playback simulation. It features multiple chart types to visualize different aspects of health data with controllable time progression.
 
 ### Screenshot
 ![Dashboard Screenshot](./screenshot.png)
-*LightningChart JS Wellness Dashboard showing real-time health data visualization with multiple chart types*
+*LightningChart JS Health Dashboard showing real-time health data visualization with multiple chart types*
 
 ### Key Features
 - **Time-based simulation**: Data playback simulating minute-by-minute health tracking with adjustable speed control (from 1 min/sec up to ultra-fast simulation) and play/pause functionality.
